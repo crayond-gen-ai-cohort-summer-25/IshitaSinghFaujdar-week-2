@@ -1,0 +1,3 @@
+2025-06-05 17:38:24,645 - __main__ - INFO - Entered login function
+2025-06-05 17:38:24,934 - __main__ - ERROR - Login Failed: 'AuthResponse' object has no attribute 'get'
+2025-06-05 17:38:24,942 - __main__ - INFO - Exiting login function

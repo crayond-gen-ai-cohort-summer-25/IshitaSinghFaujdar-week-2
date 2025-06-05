@@ -1,0 +1,4 @@
+2025-06-05 17:17:52,758 - __main__ - INFO - Form state set to login
+2025-06-05 17:17:52,764 - __main__ - INFO - Entered login function
+2025-06-05 17:17:52,773 - __main__ - ERROR - Login Failed: {e}
+2025-06-05 17:17:52,775 - __main__ - INFO - Exiting login function

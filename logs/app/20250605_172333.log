@@ -1,0 +1,4 @@
+2025-06-05 17:23:33,447 - __main__ - INFO - Form state set to login
+2025-06-05 17:23:33,454 - __main__ - INFO - Entered login function
+2025-06-05 17:23:33,474 - __main__ - ERROR - Login Failed: You must provide either an email or phone number and a password
+2025-06-05 17:23:33,479 - __main__ - INFO - Exiting login function

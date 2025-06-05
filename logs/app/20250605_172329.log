@@ -1,0 +1,3 @@
+2025-06-05 17:23:29,663 - __main__ - INFO - Entered login function
+2025-06-05 17:23:29,711 - __main__ - ERROR - Login Failed: You must provide either an email or phone number and a password
+2025-06-05 17:23:29,717 - __main__ - INFO - Exiting login function
