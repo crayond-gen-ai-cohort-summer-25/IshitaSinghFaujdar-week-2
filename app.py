@@ -13,7 +13,11 @@ try:
     from sklearn.metrics.pairwise import cosine_similarity
     from langchain_google_genai import ChatGoogleGenerativeAI
     import numpy as np
-    from langchain.embeddings import HuggingFaceEmbeddings
+    from langchain_community.embeddings import HuggingFaceEmbeddings
+    import json
+    import ast
+    from langchain_google_genai import GoogleGenerativeAIEmbeddings
+    
     error=0
 except Exception as e:
     error=(f"Error downloading packages: {e}")
@@ -38,16 +42,23 @@ load_dotenv()
 supabaseUrl = os.getenv("supabase_url")
 supabaseKey =os.getenv("supabase_api_key")
 supabase = create_client(supabaseUrl, supabaseKey)
-try:
-    GOOGLE_API_KEY= os.getenv("GEMINI_KEY")
-    llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash-001", google_api_key=GOOGLE_API_KEY)
-    doc_embeddings = hf = HuggingFaceEmbeddings(
-    repo_id="sentence-transformers/all-MiniLM-L6-v2",
-      huggingfacehub_api_token=os.getenv("hf_key")
-)
-    query_embeddings = doc_embeddings
-except Exception as e:
-    logger.error(f"Error starting the gemini-langchian stuff. {e}")
+
+@st.cache_resource(show_spinner="Loading embeddings model...")
+def load_embeddings():
+    return GoogleGenerativeAIEmbeddings(
+        model="models/embedding-001",
+        google_api_key=os.getenv("GEMINI_KEY")
+    )
+
+doc_embeddings = load_embeddings()
+query_embeddings = doc_embeddings
+@st.cache_resource
+def load_llm():
+    GOOGLE_API_KEY = os.getenv("GEMINI_KEY")
+    return ChatGoogleGenerativeAI(model="gemini-2.0-flash-001", google_api_key=GOOGLE_API_KEY)
+
+llm = load_llm()
+
 st.title("QnA chatbot")
 if not st.session_state.get("logged_in", False):
     signup = st.button("Sign Up") 
@@ -76,13 +87,14 @@ def extract_text_from_pdf(file):
 
 def chunk_text(text):
     logger.info("Entered chunk_text function")
+    chunks=[]
     try:
         splitter = RecursiveCharacterTextSplitter(
             chunk_size=500,
             chunk_overlap=100
         )
         chunks=splitter.split_text(text)
-        logger.info(f"Generated chunks {chunks}")
+        logger.info(f"Generated chunks. {len(chunks)} chunks")
     except Exception as e:
         logger.error(f"Error generating chunks: {e}")
     logger.info("Exiting chunk_text function.")
@@ -94,7 +106,9 @@ def get_embeddings(chunks):
     try:
         embedding=doc_embeddings.embed_documents(chunks)
         
-        logger.info(f"Generated embeddings for document: {embedding}")
+        logger.info(f"Generated embeddings for document: {len(embedding)}")
+        if embedding:
+            logger.info(f"Dimensions of the embeddings: {len(embedding[0])}")
     except Exception as e:
         logger.error(f"Error generating embeddings for the document: {e}")
     return embedding
@@ -187,10 +201,10 @@ def loggedin():
                 embeddings = get_embeddings(chunks)
                 
                 if embeddings:
-                    logger.info(f"embeddings recieved {embeddings}")
+                    logger.info(f"embeddings recieved : {len(embeddings)} embeddings")
                     
                 for chunk,embedding in zip(chunks,embeddings):
-                    logger.info(f"inserting into the table chunks: file_id-{file_id},chunk:{chunk},embedding: {embedding}")
+                    logger.info(f"inserting into the table chunks: file_id-{file_id},chunk:{chunk},\nembedding: {len(embedding)}")
                     supabase.table("chunks").insert({
                         "file_id": file_id,
                         "chunk_text": chunk,
@@ -200,6 +214,7 @@ def loggedin():
                 st.success(f"✅ {uploaded_file.name} uploaded and processed successfully!")
         except Exception as e:
             logger.info(f"some error in uploading and chunk generation {e}")
+            st.error("Some error uploading or generating chunks")
 
     submit=st.button("Submit")        
     try:
@@ -215,11 +230,19 @@ def loggedin():
                 logger.info(f"Retrieved the filenames for the context: {files_response}")
                 
             file_map={file["id"]: file["file_name"] for file in files_response.data}
-            
-            chunk_vectors = [np.array(chunk["embedding"]) for chunk in user_chunks]
+            chunk_vectors=[]
+            for chunk in user_chunks:
+                embedding_str=chunk["embedding"]
+                try:
+                    embedding_list=json.loads(embedding_str)
+                except Exception as e:
+                    embedding_list=ast.literal_eval(embedding_str)
+                    
+                chunk_vectors.append(np.array(embedding_list)) 
+            logger.info(f"Chunk vectors: {len(chunk_vectors)}")
             similarities = cosine_similarity([prompt_embed], chunk_vectors)[0]
-            if similarities:
-                logger.info(f"performed cosine similarity: {similarities}")
+        
+            logger.info(f"performed cosine similarity: {len(similarities)} similairites")
             k=3
             top_indices = np.argsort(similarities)[::-1][:k]
             top_chunks = [(user_chunks[i], similarities[i]) for i in top_indices]
@@ -242,6 +265,7 @@ def loggedin():
                 output.write("Error generating your response")
     except Exception as e: 
         logger.error(f"some error in the post submit part: {e}")
+        output.write("Error generating your response. Not your fault, it's developer's problem.")
 
 def sign_up():
     with st.form(key='signup',clear_on_submit=True):

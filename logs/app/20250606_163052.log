@@ -1,0 +1,53 @@
+2025-06-06 16:30:54,922 - __main__ - INFO - Entered login function
+2025-06-06 16:30:55,071 - __main__ - INFO - Exiting login function
+2025-06-06 16:31:06,726 - __main__ - INFO - Entered login function
+2025-06-06 16:31:06,845 - __main__ - INFO - Exiting login function
+2025-06-06 16:31:07,946 - __main__ - INFO - file bytes recieved.
+2025-06-06 16:31:08,096 - __main__ - INFO - got file hash.
+2025-06-06 16:31:08,489 - __main__ - INFO - insertion done. data=[{'id': 'ed640928-cfc4-49e2-9184-1bedd9a4754f', 'user_email': 'ishitafaujdar111003@gmail.com', 'file_name': 'Ishita internship task report final.pdf', 'file_hash': '0725caba84e61e245101acf2903a3c966f570ed1b933ecd9accffaf253ca00d4', 'upload_time': '2025-06-06T11:01:06.412121'}] count=None
+2025-06-06 16:31:08,527 - __main__ - INFO - response data:[{'id': 'ed640928-cfc4-49e2-9184-1bedd9a4754f', 'user_email': 'ishitafaujdar111003@gmail.com', 'file_name': 'Ishita internship task report final.pdf', 'file_hash': '0725caba84e61e245101acf2903a3c966f570ed1b933ecd9accffaf253ca00d4', 'upload_time': '2025-06-06T11:01:06.412121'}]
+2025-06-06 16:31:08,544 - __main__ - INFO - Entered text extraction module
+2025-06-06 16:31:15,306 - __main__ - INFO - successfully extracted the text.
+2025-06-06 16:31:15,317 - __main__ - INFO - Entered chunk_text function
+2025-06-06 16:31:15,336 - __main__ - INFO - Generated chunks. 18 chunks
+2025-06-06 16:31:15,349 - __main__ - INFO - Exiting chunk_text function.
+2025-06-06 16:31:17,643 - __main__ - INFO - Entered get_embeddings funtion
+2025-06-06 16:31:18,932 - __main__ - INFO - Generated embeddings for document: 18
+2025-06-06 16:31:18,940 - __main__ - INFO - Dimensions of the embeddings: 768
+2025-06-06 16:31:18,948 - __main__ - INFO - embeddings recieved : 18 embeddings
+2025-06-06 16:31:18,957 - __main__ - INFO - inserting into the table chunks: file_id-ed640928-cfc4-49e2-9184-1bedd9a4754f,chunk:Internship Task Report Project Title: Video Processing and Ad Insertion with Overlay and Segmentation Submitted by: Ishita Singh Faujdar Under the Guidance of: Mr. Gaurav Verma Mr. PriyaRanjan Planetcast Media Services Limited Sector-62, Noida Uttar Pradesh May 2025 - June 2025 1CONTENT S No. Title Page Number 1 Summary of Work Done 4 2 Technical Steps Involved 4 3 Script Structure Overview 11 4 Challenges Faced 11 5 Learnings 12 6 Tools and Technologies Used 12 2LIST OF FIGURES Page Fig. No.,
+embedding: 768
+2025-06-06 16:31:19,319 - __main__ - INFO - inserting into the table chunks: file_id-ed640928-cfc4-49e2-9184-1bedd9a4754f,chunk:Challenges Faced 11 5 Learnings 12 6 Tools and Technologies Used 12 2LIST OF FIGURES Page Fig. No. Description Number 1 Config.json- input file 4 2 Code to build filter complex 5 Overlay Output – Star Plus logo (always-on) with periodic 3 next-show graphic 5 Overlay Output – Time at 2:57 (no next-show graphic visible 4 yet) 6 5 Overlay Output – Time at 3:01 (next-show graphic displayed) 6 6 Sample .ts Segment Files Generated from FFmpeg 7 Master Manifest Playback Screenshot (show + ads total 7,
+embedding: 768
+2025-06-06 16:31:19,482 - __main__ - INFO - inserting into the table chunks: file_id-ed640928-cfc4-49e2-9184-1bedd9a4754f,chunk:.ts Segment Files Generated from FFmpeg 7 Master Manifest Playback Screenshot (show + ads total 7 duration visible) 8 Coca Cola Advertisement Playing at 7:30 from Master 8 Manifest 8 9 New Show Starting After Previous Show Ends 9 10 Properties and Metadata of Final Output Video 10 Flowchart: Script Structure for Overlay and Manifest Creation 11 (Lucidchart) 11 3Summary of Work Done As part of my internship, I designed and implemented an automated pipeline for preparing video content for,
+embedding: 768
+2025-06-06 16:31:20,867 - __main__ - INFO - inserting into the table chunks: file_id-ed640928-cfc4-49e2-9184-1bedd9a4754f,chunk:was created. This supports a variety of overlay modes like always-on, periodic, and flash. I used this to also customize position and interval and duration to modify the period interval after which the ad will be played and the duration for which it will be played. This is then used later to create filter complex. 4This would give a query like this: [1:v]format=rgba[ol1];[0:v][ol1]overlay=10:10[v1] Output after overlay 1. In the first image, star plus logo is always on and the periodic graphic,
+embedding: 768
+2025-06-06 16:31:22,803 - __main__ - INFO - inserting into the table chunks: file_id-ed640928-cfc4-49e2-9184-1bedd9a4754f,chunk:and then were stitched into a master manifest called stitched_manifest.m3u8. I primarily wanted the shows to play in order with ad breaks every 7 minutes. Here are some screenshots of the output played using the master manifest. 7In the above image you can see the file name and also the total duration of the video playing. Each show was about 20 minutes long with about 2 ad break in each so that accounts for the duration. You can also see these are the shows on top of which I did the graphic,
+embedding: 768
+2025-06-06 16:31:22,892 - __main__ - INFO - inserting into the table chunks: file_id-ed640928-cfc4-49e2-9184-1bedd9a4754f,chunk:accounts for the duration. You can also see these are the shows on top of which I did the graphic overlay. In the above image note the time 7 minutes 30 seconds and that is the coca cola ad playing whose segments I showed in the segments screenshot. You can also note the file name being displayed at the top. 8In the above screenshot you can see that once the previous show ended, the new show started. 9In the above screenshot you can see the properties of the output as well. Script Structure,
+embedding: 768
+2025-06-06 16:31:28,771 - __main__ - INFO - inserting into the table chunks: file_id-ed640928-cfc4-49e2-9184-1bedd9a4754f,chunk:FFmpeg Video processing(overlaying, segmentation) FFprobe To extract segment durations HLS(HTTP Live streaming) Used .,3u8 playlist creation JSON For structured user input Rich Logging For beautiful log files Subprocess To execute FFmpeg and ffprobe from python Linux Shell For running python and FFmpeg scripts Lucidchart For the flow chart used in report git Version control 12,
+embedding: 768
+2025-06-06 16:31:49,440 - __main__ - INFO - Entered login function
+2025-06-06 16:31:49,463 - __main__ - INFO - Exiting login function
+2025-06-06 16:31:50,287 - __main__ - INFO - file bytes recieved.
+2025-06-06 16:31:50,312 - __main__ - INFO - got file hash.
+2025-06-06 16:31:50,397 - __main__ - INFO - Existing data in the uploaded_files table. data=[{'id': 'ed640928-cfc4-49e2-9184-1bedd9a4754f', 'user_email': 'ishitafaujdar111003@gmail.com', 'file_name': 'Ishita internship task report final.pdf', 'file_hash': '0725caba84e61e245101acf2903a3c966f570ed1b933ecd9accffaf253ca00d4', 'upload_time': '2025-06-06T11:01:06.412121'}] count=None
+2025-06-06 16:31:54,624 - __main__ - INFO - Entered login function
+2025-06-06 16:31:54,641 - __main__ - INFO - Exiting login function
+2025-06-06 16:31:54,858 - __main__ - INFO - file bytes recieved.
+2025-06-06 16:31:54,874 - __main__ - INFO - got file hash.
+2025-06-06 16:31:54,939 - __main__ - INFO - Existing data in the uploaded_files table. data=[{'id': 'ed640928-cfc4-49e2-9184-1bedd9a4754f', 'user_email': 'ishitafaujdar111003@gmail.com', 'file_name': 'Ishita internship task report final.pdf', 'file_hash': '0725caba84e61e245101acf2903a3c966f570ed1b933ecd9accffaf253ca00d4', 'upload_time': '2025-06-06T11:01:06.412121'}] count=None
+2025-06-06 16:32:16,561 - __main__ - INFO - Retrieved the filenames for the context: data=[{'id': 'ed640928-cfc4-49e2-9184-1bedd9a4754f', 'file_name': 'Ishita internship task report final.pdf'}] count=None
+2025-06-06 16:32:16,674 - __main__ - INFO - Chunk vectors: 18
+2025-06-06 16:32:16,776 - __main__ - ERROR - some error in the post submit part: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+2025-06-06 16:32:39,455 - __main__ - INFO - Entered login function
+2025-06-06 16:32:39,477 - __main__ - INFO - Exiting login function
+2025-06-06 16:33:34,269 - __main__ - INFO - Entered login function
+2025-06-06 16:33:35,264 - __main__ - INFO - Exiting login function
+2025-06-06 16:34:03,536 - __main__ - INFO - Entered login function
+2025-06-06 16:34:03,558 - __main__ - INFO - Exiting login function
+2025-06-06 16:34:10,467 - __main__ - INFO - Retrieved the filenames for the context: data=[{'id': 'ed640928-cfc4-49e2-9184-1bedd9a4754f', 'file_name': 'Ishita internship task report final.pdf'}] count=None
+2025-06-06 16:34:10,537 - __main__ - INFO - Chunk vectors: 18
+2025-06-06 16:34:10,582 - __main__ - INFO - performed cosine similarity: 18 similairites

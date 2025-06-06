@@ -1,0 +1,15 @@
+2025-06-06 16:03:45,609 - __main__ - ERROR - Error starting the gemini-langchian stuff. Cannot copy out of meta tensor; no data! Please use torch.nn.Module.to_empty() instead of torch.nn.Module.to() when moving module from meta to a different device.
+2025-06-06 16:03:45,629 - __main__ - INFO - Entered login function
+2025-06-06 16:03:45,644 - __main__ - INFO - Exiting login function
+2025-06-06 16:03:45,872 - __main__ - INFO - file bytes recieved.
+2025-06-06 16:03:45,880 - __main__ - INFO - got file hash.
+2025-06-06 16:03:46,014 - __main__ - INFO - insertion done. data=[{'id': 'd59bb07e-9fec-4f5c-986d-a58f99521bd5', 'user_email': 'ishitafaujdar111003@gmail.com', 'file_name': 'Ishita internship task report final.pdf', 'file_hash': '0725caba84e61e245101acf2903a3c966f570ed1b933ecd9accffaf253ca00d4', 'upload_time': '2025-06-06T10:33:43.998032'}] count=None
+2025-06-06 16:03:46,024 - __main__ - INFO - response data:[{'id': 'd59bb07e-9fec-4f5c-986d-a58f99521bd5', 'user_email': 'ishitafaujdar111003@gmail.com', 'file_name': 'Ishita internship task report final.pdf', 'file_hash': '0725caba84e61e245101acf2903a3c966f570ed1b933ecd9accffaf253ca00d4', 'upload_time': '2025-06-06T10:33:43.998032'}]
+2025-06-06 16:03:46,031 - __main__ - INFO - Entered text extraction module
+2025-06-06 16:03:51,303 - __main__ - INFO - successfully extracted the text.
+2025-06-06 16:03:51,310 - __main__ - INFO - Entered chunk_text function
+2025-06-06 16:03:51,323 - __main__ - INFO - Generated chunks. 18 chunks
+2025-06-06 16:03:51,329 - __main__ - INFO - Exiting chunk_text function.
+2025-06-06 16:03:52,861 - __main__ - INFO - Entered get_embeddings funtion
+2025-06-06 16:03:52,876 - __main__ - ERROR - Error generating embeddings for the document: name 'doc_embeddings' is not defined
+2025-06-06 16:03:52,886 - __main__ - INFO - some error in uploading and chunk generation cannot access local variable 'embedding' where it is not associated with a value

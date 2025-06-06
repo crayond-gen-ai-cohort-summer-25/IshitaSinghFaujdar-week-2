@@ -1,0 +1,7 @@
+2025-06-06 15:55:18,313 - __main__ - ERROR - Error starting the gemini-langchian stuff. Cannot copy out of meta tensor; no data! Please use torch.nn.Module.to_empty() instead of torch.nn.Module.to() when moving module from meta to a different device.
+2025-06-06 15:55:18,337 - __main__ - INFO - Entered login function
+2025-06-06 15:55:18,355 - __main__ - INFO - Exiting login function
+2025-06-06 15:55:18,993 - __main__ - INFO - file bytes recieved.
+2025-06-06 15:55:19,003 - __main__ - INFO - got file hash.
+2025-06-06 15:55:19,103 - __main__ - INFO - Existing data in the uploaded_files table. data=[{'id': '48b9acfa-4532-4252-bf11-33b5d10b7132', 'user_email': 'ishitafaujdar111003@gmail.com', 'file_name': 'Ishita internship task report final.pdf', 'file_hash': '0725caba84e61e245101acf2903a3c966f570ed1b933ecd9accffaf253ca00d4', 'upload_time': '2025-06-06T10:24:08.166512'}] count=None
+2025-06-06 15:55:19,113 - __main__ - ERROR - some error in the post submit part: name 'query_embeddings' is not defined

@@ -1,0 +1,20 @@
+2025-06-06 15:16:14,118 - __main__ - INFO - Entered login function
+2025-06-06 15:16:14,165 - __main__ - INFO - Exiting login function
+2025-06-06 15:16:14,514 - __main__ - INFO - file bytes recieved.
+2025-06-06 15:16:14,527 - __main__ - INFO - got file hash.
+2025-06-06 15:16:14,621 - __main__ - INFO - Existing data in the uploaded_files table. data=[{'id': '9cc1689a-6c8f-46ed-b6c6-146155c293be', 'user_email': 'ishitafaujdar111003@gmail.com', 'file_name': 'Ishita internship task report final.pdf', 'file_hash': '0725caba84e61e245101acf2903a3c966f570ed1b933ecd9accffaf253ca00d4', 'upload_time': '2025-06-06T09:45:53.215929'}] count=None
+2025-06-06 15:16:15,525 - __main__ - INFO - Retrieved the chunks from the database: data=[] count=None
+2025-06-06 15:16:15,620 - __main__ - INFO - Retrieved the filenames for the context: data=[{'id': '9cc1689a-6c8f-46ed-b6c6-146155c293be', 'file_name': 'Ishita internship task report final.pdf'}] count=None
+2025-06-06 15:16:15,625 - __main__ - ERROR - some error in the post submit part: Expected 2D array, got 1D array instead:
+array=[].
+Reshape your data either using array.reshape(-1, 1) if your data has a single feature or array.reshape(1, -1) if it contains a single sample.
+2025-06-06 15:27:00,461 - __main__ - INFO - Entered login function
+2025-06-06 15:27:00,499 - __main__ - INFO - Exiting login function
+2025-06-06 15:27:01,556 - __main__ - INFO - file bytes recieved.
+2025-06-06 15:27:01,564 - __main__ - INFO - got file hash.
+2025-06-06 15:27:01,643 - __main__ - INFO - Existing data in the uploaded_files table. data=[{'id': '9cc1689a-6c8f-46ed-b6c6-146155c293be', 'user_email': 'ishitafaujdar111003@gmail.com', 'file_name': 'Ishita internship task report final.pdf', 'file_hash': '0725caba84e61e245101acf2903a3c966f570ed1b933ecd9accffaf253ca00d4', 'upload_time': '2025-06-06T09:45:53.215929'}] count=None
+2025-06-06 15:27:03,393 - __main__ - INFO - Retrieved the chunks from the database: data=[] count=None
+2025-06-06 15:27:03,466 - __main__ - INFO - Retrieved the filenames for the context: data=[{'id': '9cc1689a-6c8f-46ed-b6c6-146155c293be', 'file_name': 'Ishita internship task report final.pdf'}] count=None
+2025-06-06 15:27:03,545 - __main__ - ERROR - some error in the post submit part: Expected 2D array, got 1D array instead:
+array=[].
+Reshape your data either using array.reshape(-1, 1) if your data has a single feature or array.reshape(1, -1) if it contains a single sample.

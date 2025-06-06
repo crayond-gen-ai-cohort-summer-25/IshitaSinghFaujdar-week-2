@@ -1,0 +1,17 @@
+2025-06-06 16:31:54,624 - __main__ - INFO - Entered login function
+2025-06-06 16:31:54,641 - __main__ - INFO - Exiting login function
+2025-06-06 16:31:54,858 - __main__ - INFO - file bytes recieved.
+2025-06-06 16:31:54,874 - __main__ - INFO - got file hash.
+2025-06-06 16:31:54,939 - __main__ - INFO - Existing data in the uploaded_files table. data=[{'id': 'ed640928-cfc4-49e2-9184-1bedd9a4754f', 'user_email': 'ishitafaujdar111003@gmail.com', 'file_name': 'Ishita internship task report final.pdf', 'file_hash': '0725caba84e61e245101acf2903a3c966f570ed1b933ecd9accffaf253ca00d4', 'upload_time': '2025-06-06T11:01:06.412121'}] count=None
+2025-06-06 16:32:16,561 - __main__ - INFO - Retrieved the filenames for the context: data=[{'id': 'ed640928-cfc4-49e2-9184-1bedd9a4754f', 'file_name': 'Ishita internship task report final.pdf'}] count=None
+2025-06-06 16:32:16,674 - __main__ - INFO - Chunk vectors: 18
+2025-06-06 16:32:16,776 - __main__ - ERROR - some error in the post submit part: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+2025-06-06 16:32:39,455 - __main__ - INFO - Entered login function
+2025-06-06 16:32:39,477 - __main__ - INFO - Exiting login function
+2025-06-06 16:33:34,269 - __main__ - INFO - Entered login function
+2025-06-06 16:33:35,264 - __main__ - INFO - Exiting login function
+2025-06-06 16:34:03,536 - __main__ - INFO - Entered login function
+2025-06-06 16:34:03,558 - __main__ - INFO - Exiting login function
+2025-06-06 16:34:10,467 - __main__ - INFO - Retrieved the filenames for the context: data=[{'id': 'ed640928-cfc4-49e2-9184-1bedd9a4754f', 'file_name': 'Ishita internship task report final.pdf'}] count=None
+2025-06-06 16:34:10,537 - __main__ - INFO - Chunk vectors: 18
+2025-06-06 16:34:10,582 - __main__ - INFO - performed cosine similarity: 18 similairites

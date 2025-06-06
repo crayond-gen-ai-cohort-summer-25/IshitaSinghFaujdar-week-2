@@ -1,0 +1,4 @@
+2025-06-06 15:52:25,800 - __main__ - ERROR - Error starting the gemini-langchian stuff. Cannot copy out of meta tensor; no data! Please use torch.nn.Module.to_empty() instead of torch.nn.Module.to() when moving module from meta to a different device.
+2025-06-06 15:52:25,820 - __main__ - INFO - Entered login function
+2025-06-06 15:52:25,835 - __main__ - ERROR - Login Failed: You must provide either an email or phone number and a password
+2025-06-06 15:52:25,844 - __main__ - INFO - Exiting login function

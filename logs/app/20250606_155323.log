@@ -1,0 +1,18 @@
+2025-06-06 15:53:29,217 - __main__ - ERROR - Error starting the gemini-langchian stuff. Cannot copy out of meta tensor; no data! Please use torch.nn.Module.to_empty() instead of torch.nn.Module.to() when moving module from meta to a different device.
+2025-06-06 15:53:29,240 - __main__ - INFO - Entered login function
+2025-06-06 15:53:29,258 - __main__ - INFO - Exiting login function
+2025-06-06 15:54:09,708 - __main__ - ERROR - Error starting the gemini-langchian stuff. Cannot copy out of meta tensor; no data! Please use torch.nn.Module.to_empty() instead of torch.nn.Module.to() when moving module from meta to a different device.
+2025-06-06 15:54:09,727 - __main__ - INFO - Entered login function
+2025-06-06 15:54:09,739 - __main__ - INFO - Exiting login function
+2025-06-06 15:54:10,023 - __main__ - INFO - file bytes recieved.
+2025-06-06 15:54:10,032 - __main__ - INFO - got file hash.
+2025-06-06 15:54:10,179 - __main__ - INFO - insertion done. data=[{'id': '48b9acfa-4532-4252-bf11-33b5d10b7132', 'user_email': 'ishitafaujdar111003@gmail.com', 'file_name': 'Ishita internship task report final.pdf', 'file_hash': '0725caba84e61e245101acf2903a3c966f570ed1b933ecd9accffaf253ca00d4', 'upload_time': '2025-06-06T10:24:08.166512'}] count=None
+2025-06-06 15:54:10,185 - __main__ - INFO - response data:[{'id': '48b9acfa-4532-4252-bf11-33b5d10b7132', 'user_email': 'ishitafaujdar111003@gmail.com', 'file_name': 'Ishita internship task report final.pdf', 'file_hash': '0725caba84e61e245101acf2903a3c966f570ed1b933ecd9accffaf253ca00d4', 'upload_time': '2025-06-06T10:24:08.166512'}]
+2025-06-06 15:54:10,190 - __main__ - INFO - Entered text extraction module
+2025-06-06 15:54:14,028 - __main__ - INFO - successfully extracted the text.
+2025-06-06 15:54:14,038 - __main__ - INFO - Entered chunk_text function
+2025-06-06 15:54:14,056 - __main__ - INFO - Generated chunks. 18 chunks
+2025-06-06 15:54:14,063 - __main__ - INFO - Exiting chunk_text function.
+2025-06-06 15:54:15,946 - __main__ - INFO - Entered get_embeddings funtion
+2025-06-06 15:54:15,961 - __main__ - ERROR - Error generating embeddings for the document: name 'doc_embeddings' is not defined
+2025-06-06 15:54:15,974 - __main__ - INFO - some error in uploading and chunk generation cannot access local variable 'embedding' where it is not associated with a value

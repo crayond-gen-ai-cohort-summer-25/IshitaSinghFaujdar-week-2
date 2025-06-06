@@ -1,0 +1,5 @@
+2025-06-06 16:31:49,440 - __main__ - INFO - Entered login function
+2025-06-06 16:31:49,463 - __main__ - INFO - Exiting login function
+2025-06-06 16:31:50,287 - __main__ - INFO - file bytes recieved.
+2025-06-06 16:31:50,312 - __main__ - INFO - got file hash.
+2025-06-06 16:31:50,397 - __main__ - INFO - Existing data in the uploaded_files table. data=[{'id': 'ed640928-cfc4-49e2-9184-1bedd9a4754f', 'user_email': 'ishitafaujdar111003@gmail.com', 'file_name': 'Ishita internship task report final.pdf', 'file_hash': '0725caba84e61e245101acf2903a3c966f570ed1b933ecd9accffaf253ca00d4', 'upload_time': '2025-06-06T11:01:06.412121'}] count=None

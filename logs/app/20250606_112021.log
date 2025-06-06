@@ -1,0 +1,52 @@
+2025-06-06 11:20:21,432 - __main__ - INFO - Entered login function
+2025-06-06 11:20:21,450 - __main__ - INFO - Exiting login function
+2025-06-06 11:20:21,690 - __main__ - INFO - file bytes recieved.
+2025-06-06 11:20:21,701 - __main__ - INFO - got file hash.
+2025-06-06 11:20:21,847 - __main__ - INFO - insertion done. data=[{'id': '2895de42-5bd4-41c7-8ce0-73ce4d6e591e', 'user_email': 'ishitafaujdar111003@gmail.com', 'file_name': 'Ishita internship task report final.pdf', 'file_hash': '0725caba84e61e245101acf2903a3c966f570ed1b933ecd9accffaf253ca00d4', 'upload_time': '2025-06-06T05:50:20.552626'}] count=None
+2025-06-06 11:20:21,852 - __main__ - INFO - response data:[{'id': '2895de42-5bd4-41c7-8ce0-73ce4d6e591e', 'user_email': 'ishitafaujdar111003@gmail.com', 'file_name': 'Ishita internship task report final.pdf', 'file_hash': '0725caba84e61e245101acf2903a3c966f570ed1b933ecd9accffaf253ca00d4', 'upload_time': '2025-06-06T05:50:20.552626'}]
+2025-06-06 11:20:21,857 - __main__ - INFO - Entered text extraction module
+2025-06-06 11:20:26,957 - __main__ - INFO - successfully extracted the text.
+2025-06-06 11:20:26,967 - __main__ - INFO - Entered chunk_text function
+2025-06-06 11:20:28,579 - __main__ - INFO - Exiting chunk_text function.
+2025-06-06 11:20:29,486 - __main__ - INFO - Entered get_embeddings funtion
+2025-06-06 11:20:31,310 - __main__ - ERROR - Error generating embeddings for the document: Error embedding content: 429 Resource has been exhausted (e.g. check quota).
+2025-06-06 11:20:31,315 - __main__ - INFO - some error in uploading and chunk generation cannot access local variable 'embedding' where it is not associated with a value
+2025-06-06 11:20:44,789 - __main__ - INFO - Entered login function
+2025-06-06 11:20:44,801 - __main__ - INFO - Exiting login function
+2025-06-06 11:20:45,135 - __main__ - INFO - file bytes recieved.
+2025-06-06 11:20:45,146 - __main__ - INFO - got file hash.
+2025-06-06 11:20:45,236 - __main__ - INFO - Existing data in the uploaded_files table. data=[{'id': '2895de42-5bd4-41c7-8ce0-73ce4d6e591e', 'user_email': 'ishitafaujdar111003@gmail.com', 'file_name': 'Ishita internship task report final.pdf', 'file_hash': '0725caba84e61e245101acf2903a3c966f570ed1b933ecd9accffaf253ca00d4', 'upload_time': '2025-06-06T05:50:20.552626'}] count=None
+2025-06-06 11:52:21,748 - __main__ - ERROR - Error starting the gemini-langchian stuff. 2 validation errors for HuggingFaceEmbeddings
+repo_id
+  Extra inputs are not permitted [type=extra_forbidden, input_value='sentence-transformers/all-MiniLM-L6-v2', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/extra_forbidden
+huggingfacehub_api_token
+  Extra inputs are not permitted [type=extra_forbidden, input_value='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', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/extra_forbidden
+2025-06-06 11:52:21,895 - __main__ - INFO - Entered login function
+2025-06-06 11:52:21,935 - __main__ - INFO - Exiting login function
+2025-06-06 11:52:23,689 - __main__ - INFO - file bytes recieved.
+2025-06-06 11:52:23,701 - __main__ - INFO - got file hash.
+2025-06-06 11:52:23,854 - __main__ - INFO - Existing data in the uploaded_files table. data=[{'id': '2895de42-5bd4-41c7-8ce0-73ce4d6e591e', 'user_email': 'ishitafaujdar111003@gmail.com', 'file_name': 'Ishita internship task report final.pdf', 'file_hash': '0725caba84e61e245101acf2903a3c966f570ed1b933ecd9accffaf253ca00d4', 'upload_time': '2025-06-06T05:50:20.552626'}] count=None
+2025-06-06 11:52:23,859 - __main__ - ERROR - some error in the post submit part: name 'query_embeddings' is not defined
+2025-06-06 11:55:24,263 - __main__ - ERROR - Error downloading packages: Error downloading packages: Module langchain_community.embeddings not found. Please install langchain-community to access this module. You can install it using `pip install -U langchain-community`
+2025-06-06 11:55:24,406 - __main__ - ERROR - Error starting the gemini-langchian stuff. name 'HuggingFaceEmbeddings' is not defined
+2025-06-06 11:55:24,422 - __main__ - INFO - Entered login function
+2025-06-06 11:55:24,439 - __main__ - INFO - Exiting login function
+2025-06-06 11:55:24,717 - __main__ - INFO - file bytes recieved.
+2025-06-06 11:55:24,727 - __main__ - INFO - got file hash.
+2025-06-06 11:55:24,831 - __main__ - INFO - Existing data in the uploaded_files table. data=[{'id': '2895de42-5bd4-41c7-8ce0-73ce4d6e591e', 'user_email': 'ishitafaujdar111003@gmail.com', 'file_name': 'Ishita internship task report final.pdf', 'file_hash': '0725caba84e61e245101acf2903a3c966f570ed1b933ecd9accffaf253ca00d4', 'upload_time': '2025-06-06T05:50:20.552626'}] count=None
+2025-06-06 11:55:24,844 - __main__ - ERROR - some error in the post submit part: name 'query_embeddings' is not defined
+2025-06-06 11:58:06,656 - __main__ - ERROR - Error starting the gemini-langchian stuff. 2 validation errors for HuggingFaceEmbeddings
+repo_id
+  Extra inputs are not permitted [type=extra_forbidden, input_value='sentence-transformers/all-MiniLM-L6-v2', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/extra_forbidden
+huggingfacehub_api_token
+  Extra inputs are not permitted [type=extra_forbidden, input_value='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', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/extra_forbidden
+2025-06-06 11:58:06,893 - __main__ - INFO - Entered login function
+2025-06-06 11:58:06,972 - __main__ - INFO - Exiting login function
+2025-06-06 11:58:08,093 - __main__ - INFO - file bytes recieved.
+2025-06-06 11:58:08,106 - __main__ - INFO - got file hash.
+2025-06-06 11:58:08,217 - __main__ - INFO - Existing data in the uploaded_files table. data=[{'id': '2895de42-5bd4-41c7-8ce0-73ce4d6e591e', 'user_email': 'ishitafaujdar111003@gmail.com', 'file_name': 'Ishita internship task report final.pdf', 'file_hash': '0725caba84e61e245101acf2903a3c966f570ed1b933ecd9accffaf253ca00d4', 'upload_time': '2025-06-06T05:50:20.552626'}] count=None
+2025-06-06 11:58:08,226 - __main__ - ERROR - some error in the post submit part: name 'query_embeddings' is not defined

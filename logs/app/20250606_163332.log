@@ -1,0 +1,7 @@
+2025-06-06 16:33:34,269 - __main__ - INFO - Entered login function
+2025-06-06 16:33:35,264 - __main__ - INFO - Exiting login function
+2025-06-06 16:34:03,536 - __main__ - INFO - Entered login function
+2025-06-06 16:34:03,558 - __main__ - INFO - Exiting login function
+2025-06-06 16:34:10,467 - __main__ - INFO - Retrieved the filenames for the context: data=[{'id': 'ed640928-cfc4-49e2-9184-1bedd9a4754f', 'file_name': 'Ishita internship task report final.pdf'}] count=None
+2025-06-06 16:34:10,537 - __main__ - INFO - Chunk vectors: 18
+2025-06-06 16:34:10,582 - __main__ - INFO - performed cosine similarity: 18 similairites

@@ -1,0 +1,15 @@
+2025-06-06 15:43:30,965 - __main__ - INFO - Entered login function
+2025-06-06 15:43:31,026 - __main__ - INFO - Exiting login function
+2025-06-06 15:43:31,797 - __main__ - INFO - file bytes recieved.
+2025-06-06 15:43:31,806 - __main__ - INFO - got file hash.
+2025-06-06 15:43:31,873 - __main__ - INFO - Existing data in the uploaded_files table. data=[{'id': 'c42e0254-1d4a-4d91-9d15-eefb51e62b9c', 'user_email': 'ishitafaujdar111003@gmail.com', 'file_name': 'Ishita internship task report final.pdf', 'file_hash': '0725caba84e61e245101acf2903a3c966f570ed1b933ecd9accffaf253ca00d4', 'upload_time': '2025-06-06T09:58:52.578475'}] count=None
+2025-06-06 15:43:33,191 - __main__ - INFO - Retrieved the filenames for the context: data=[{'id': 'c42e0254-1d4a-4d91-9d15-eefb51e62b9c', 'file_name': 'Ishita internship task report final.pdf'}] count=None
+2025-06-06 15:43:33,282 - __main__ - ERROR - some error in the post submit part: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+2025-06-06 15:43:49,208 - __main__ - INFO - Entered login function
+2025-06-06 15:43:49,225 - __main__ - INFO - Exiting login function
+2025-06-06 15:43:58,982 - __main__ - INFO - Entered login function
+2025-06-06 15:43:59,010 - __main__ - INFO - Exiting login function
+2025-06-06 15:43:59,332 - __main__ - INFO - Entered delete file function.
+2025-06-06 15:43:59,646 - __main__ - INFO - Exiting delete file function
+2025-06-06 15:44:05,388 - __main__ - INFO - Entered login function
+2025-06-06 15:44:05,415 - __main__ - INFO - Exiting login function

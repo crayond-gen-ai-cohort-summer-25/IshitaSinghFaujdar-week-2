@@ -1,0 +1,97 @@
+2025-06-06 11:09:49,142 - __main__ - INFO - Entered login function
+2025-06-06 11:09:49,825 - __main__ - INFO - Response: provider_token=None provider_refresh_token=None access_token='eyJhbGciOiJIUzI1NiIsImtpZCI6Ikx0YUFrd1BYOFdTNjhBSVIiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NyeXNncXFjcHJ4ZmZ1cmtkbmdqLnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiI4YjRlZjQ1Mi0zMjk5LTRiY2YtOWM2Yi0wNjY1N2FkMDUyYTIiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzQ5MTkxOTg4LCJpYXQiOjE3NDkxODgzODgsImVtYWlsIjoiaXNoaXRhZmF1amRhcjExMTAwM0BnbWFpbC5jb20iLCJwaG9uZSI6IiIsImFwcF9tZXRhZGF0YSI6eyJwcm92aWRlciI6ImVtYWlsIiwicHJvdmlkZXJzIjpbImVtYWlsIl19LCJ1c2VyX21ldGFkYXRhIjp7ImVtYWlsIjoiaXNoaXRhZmF1amRhcjExMTAwM0BnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwicGhvbmVfdmVyaWZpZWQiOmZhbHNlLCJzdWIiOiI4YjRlZjQ1Mi0zMjk5LTRiY2YtOWM2Yi0wNjY1N2FkMDUyYTIifSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJwYXNzd29yZCIsInRpbWVzdGFtcCI6MTc0OTE4ODM4OH1dLCJzZXNzaW9uX2lkIjoiNDAwYzdhMjQtOGEwZi00YjNmLTg1OTUtYjg3ZTk5ZjJhZTMwIiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.jcAmrajFs50aMkTfdCUBiPe8scFnMjbUj6yp9uTxDJc' refresh_token='3xxpqpthaooe' expires_in=3600 expires_at=1749191988 token_type='bearer' user=User(id='8b4ef452-3299-4bcf-9c6b-06657ad052a2', app_metadata={'provider': 'email', 'providers': ['email']}, user_metadata={'email': 'ishitafaujdar111003@gmail.com', 'email_verified': True, 'phone_verified': False, 'sub': '8b4ef452-3299-4bcf-9c6b-06657ad052a2'}, aud='authenticated', confirmation_sent_at=datetime.datetime(2025, 6, 5, 12, 7, 41, 604123, tzinfo=TzInfo(UTC)), recovery_sent_at=None, email_change_sent_at=None, new_email=None, new_phone=None, invited_at=None, action_link=None, email='ishitafaujdar111003@gmail.com', phone='', created_at=datetime.datetime(2025, 6, 5, 12, 7, 41, 596343, tzinfo=TzInfo(UTC)), confirmed_at=datetime.datetime(2025, 6, 5, 12, 8, 8, 455920, tzinfo=TzInfo(UTC)), email_confirmed_at=datetime.datetime(2025, 6, 5, 12, 8, 8, 455920, tzinfo=TzInfo(UTC)), phone_confirmed_at=None, last_sign_in_at=datetime.datetime(2025, 6, 6, 5, 39, 48, 515230, tzinfo=TzInfo(UTC)), role='authenticated', updated_at=datetime.datetime(2025, 6, 6, 5, 39, 48, 520377, tzinfo=TzInfo(UTC)), identities=[UserIdentity(id='8b4ef452-3299-4bcf-9c6b-06657ad052a2', identity_id='ac2893de-5b5a-45db-afc3-975ec2506719', user_id='8b4ef452-3299-4bcf-9c6b-06657ad052a2', identity_data={'email': 'ishitafaujdar111003@gmail.com', 'email_verified': True, 'phone_verified': False, 'sub': '8b4ef452-3299-4bcf-9c6b-06657ad052a2'}, provider='email', created_at=datetime.datetime(2025, 6, 5, 12, 7, 41, 601007, tzinfo=TzInfo(UTC)), last_sign_in_at=datetime.datetime(2025, 6, 5, 12, 7, 41, 600955, tzinfo=TzInfo(UTC)), updated_at=datetime.datetime(2025, 6, 5, 12, 7, 41, 601007, tzinfo=TzInfo(UTC)))], is_anonymous=False, factors=None)
+2025-06-06 11:09:49,834 - __main__ - INFO - Set session state as True
+2025-06-06 11:09:49,852 - __main__ - INFO - set session state user email as ishitafaujdar111003@gmail.com
+2025-06-06 11:09:49,855 - __main__ - INFO - Exiting login function
+2025-06-06 11:10:25,424 - __main__ - INFO - Entered login function
+2025-06-06 11:10:25,440 - __main__ - INFO - Exiting login function
+2025-06-06 11:10:30,548 - __main__ - INFO - Entered login function
+2025-06-06 11:10:30,569 - __main__ - INFO - Exiting login function
+2025-06-06 11:10:30,815 - __main__ - INFO - file bytes recieved.
+2025-06-06 11:10:30,821 - __main__ - INFO - got file hash.
+2025-06-06 11:10:30,944 - __main__ - INFO - insertion done. data=[{'id': 'da1cee9c-0275-4283-8aea-6d9c9a4b8696', 'user_email': 'ishitafaujdar111003@gmail.com', 'file_name': 'chapter activites grss.pdf', 'file_hash': '037b72acedfab6c1dbd8ec458d23c3955bf837ea7d6b160f065f125578d7618c', 'upload_time': '2025-06-06T05:40:29.664791'}] count=None
+2025-06-06 11:10:30,947 - __main__ - INFO - response data:[{'id': 'da1cee9c-0275-4283-8aea-6d9c9a4b8696', 'user_email': 'ishitafaujdar111003@gmail.com', 'file_name': 'chapter activites grss.pdf', 'file_hash': '037b72acedfab6c1dbd8ec458d23c3955bf837ea7d6b160f065f125578d7618c', 'upload_time': '2025-06-06T05:40:29.664791'}]
+2025-06-06 11:10:30,952 - __main__ - INFO - Entered text extraction module
+2025-06-06 11:10:57,994 - __main__ - INFO - Entered chunk_text function
+2025-06-06 11:10:57,995 - __main__ - INFO - Exiting chunk_text function.
+2025-06-06 11:10:57,996 - __main__ - INFO - Entered get_embeddings funtion
+2025-06-06 11:11:02,726 - __main__ - INFO - Entered login function
+2025-06-06 11:11:02,736 - __main__ - INFO - Exiting login function
+2025-06-06 11:11:02,949 - __main__ - INFO - file bytes recieved.
+2025-06-06 11:11:02,954 - __main__ - INFO - got file hash.
+2025-06-06 11:11:03,075 - __main__ - INFO - Existing data in the uploaded_files table. data=[{'id': 'da1cee9c-0275-4283-8aea-6d9c9a4b8696', 'user_email': 'ishitafaujdar111003@gmail.com', 'file_name': 'chapter activites grss.pdf', 'file_hash': '037b72acedfab6c1dbd8ec458d23c3955bf837ea7d6b160f065f125578d7618c', 'upload_time': '2025-06-06T05:40:29.664791'}] count=None
+2025-06-06 11:11:05,311 - __main__ - INFO - Retrieved the chunks from the database: data=[] count=None
+2025-06-06 11:11:05,377 - __main__ - INFO - Retrieved the filenames for the context: data=[{'id': 'da1cee9c-0275-4283-8aea-6d9c9a4b8696', 'file_name': 'chapter activites grss.pdf'}] count=None
+2025-06-06 11:11:05,380 - __main__ - ERROR - some error in the post submit part: Expected 2D array, got 1D array instead:
+array=[].
+Reshape your data either using array.reshape(-1, 1) if your data has a single feature or array.reshape(1, -1) if it contains a single sample.
+2025-06-06 11:18:45,240 - __main__ - INFO - Entered login function
+2025-06-06 11:18:45,300 - __main__ - INFO - Exiting login function
+2025-06-06 11:18:57,205 - __main__ - INFO - Form state set to login
+2025-06-06 11:18:57,213 - __main__ - INFO - Entered login function
+2025-06-06 11:18:57,232 - __main__ - INFO - Exiting login function
+2025-06-06 11:19:18,192 - __main__ - INFO - Entered login function
+2025-06-06 11:19:18,942 - __main__ - INFO - Response: provider_token=None provider_refresh_token=None access_token='eyJhbGciOiJIUzI1NiIsImtpZCI6Ikx0YUFrd1BYOFdTNjhBSVIiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NyeXNncXFjcHJ4ZmZ1cmtkbmdqLnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiI4YjRlZjQ1Mi0zMjk5LTRiY2YtOWM2Yi0wNjY1N2FkMDUyYTIiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzQ5MTkyNTU3LCJpYXQiOjE3NDkxODg5NTcsImVtYWlsIjoiaXNoaXRhZmF1amRhcjExMTAwM0BnbWFpbC5jb20iLCJwaG9uZSI6IiIsImFwcF9tZXRhZGF0YSI6eyJwcm92aWRlciI6ImVtYWlsIiwicHJvdmlkZXJzIjpbImVtYWlsIl19LCJ1c2VyX21ldGFkYXRhIjp7ImVtYWlsIjoiaXNoaXRhZmF1amRhcjExMTAwM0BnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwicGhvbmVfdmVyaWZpZWQiOmZhbHNlLCJzdWIiOiI4YjRlZjQ1Mi0zMjk5LTRiY2YtOWM2Yi0wNjY1N2FkMDUyYTIifSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJwYXNzd29yZCIsInRpbWVzdGFtcCI6MTc0OTE4ODk1N31dLCJzZXNzaW9uX2lkIjoiYWViOGE1YTUtNjI1OS00ODVkLTk3YTgtODhmNTdlYzI4MGMzIiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.mYQ74pZbW7sQZlmRUH8shzASJ1QFQp7Nl6txoWmYzvg' refresh_token='sf2pmaekwxpr' expires_in=3600 expires_at=1749192557 token_type='bearer' user=User(id='8b4ef452-3299-4bcf-9c6b-06657ad052a2', app_metadata={'provider': 'email', 'providers': ['email']}, user_metadata={'email': 'ishitafaujdar111003@gmail.com', 'email_verified': True, 'phone_verified': False, 'sub': '8b4ef452-3299-4bcf-9c6b-06657ad052a2'}, aud='authenticated', confirmation_sent_at=datetime.datetime(2025, 6, 5, 12, 7, 41, 604123, tzinfo=TzInfo(UTC)), recovery_sent_at=None, email_change_sent_at=None, new_email=None, new_phone=None, invited_at=None, action_link=None, email='ishitafaujdar111003@gmail.com', phone='', created_at=datetime.datetime(2025, 6, 5, 12, 7, 41, 596343, tzinfo=TzInfo(UTC)), confirmed_at=datetime.datetime(2025, 6, 5, 12, 8, 8, 455920, tzinfo=TzInfo(UTC)), email_confirmed_at=datetime.datetime(2025, 6, 5, 12, 8, 8, 455920, tzinfo=TzInfo(UTC)), phone_confirmed_at=None, last_sign_in_at=datetime.datetime(2025, 6, 6, 5, 49, 17, 596141, tzinfo=TzInfo(UTC)), role='authenticated', updated_at=datetime.datetime(2025, 6, 6, 5, 49, 17, 600012, tzinfo=TzInfo(UTC)), identities=[UserIdentity(id='8b4ef452-3299-4bcf-9c6b-06657ad052a2', identity_id='ac2893de-5b5a-45db-afc3-975ec2506719', user_id='8b4ef452-3299-4bcf-9c6b-06657ad052a2', identity_data={'email': 'ishitafaujdar111003@gmail.com', 'email_verified': True, 'phone_verified': False, 'sub': '8b4ef452-3299-4bcf-9c6b-06657ad052a2'}, provider='email', created_at=datetime.datetime(2025, 6, 5, 12, 7, 41, 601007, tzinfo=TzInfo(UTC)), last_sign_in_at=datetime.datetime(2025, 6, 5, 12, 7, 41, 600955, tzinfo=TzInfo(UTC)), updated_at=datetime.datetime(2025, 6, 5, 12, 7, 41, 601007, tzinfo=TzInfo(UTC)))], is_anonymous=False, factors=None)
+2025-06-06 11:19:18,964 - __main__ - INFO - Set session state as True
+2025-06-06 11:19:18,973 - __main__ - INFO - set session state user email as ishitafaujdar111003@gmail.com
+2025-06-06 11:19:18,979 - __main__ - INFO - Exiting login function
+2025-06-06 11:19:49,364 - __main__ - INFO - Entered login function
+2025-06-06 11:19:49,377 - __main__ - INFO - Exiting login function
+2025-06-06 11:19:51,722 - __main__ - INFO - Entered login function
+2025-06-06 11:19:51,755 - __main__ - INFO - Exiting login function
+2025-06-06 11:19:52,093 - __main__ - INFO - Entered delete file function.
+2025-06-06 11:19:52,252 - __main__ - INFO - Exiting delete file function
+2025-06-06 11:19:52,790 - __main__ - INFO - Entered login function
+2025-06-06 11:19:52,811 - __main__ - INFO - Exiting login function
+2025-06-06 11:20:21,432 - __main__ - INFO - Entered login function
+2025-06-06 11:20:21,450 - __main__ - INFO - Exiting login function
+2025-06-06 11:20:21,690 - __main__ - INFO - file bytes recieved.
+2025-06-06 11:20:21,701 - __main__ - INFO - got file hash.
+2025-06-06 11:20:21,847 - __main__ - INFO - insertion done. data=[{'id': '2895de42-5bd4-41c7-8ce0-73ce4d6e591e', 'user_email': 'ishitafaujdar111003@gmail.com', 'file_name': 'Ishita internship task report final.pdf', 'file_hash': '0725caba84e61e245101acf2903a3c966f570ed1b933ecd9accffaf253ca00d4', 'upload_time': '2025-06-06T05:50:20.552626'}] count=None
+2025-06-06 11:20:21,852 - __main__ - INFO - response data:[{'id': '2895de42-5bd4-41c7-8ce0-73ce4d6e591e', 'user_email': 'ishitafaujdar111003@gmail.com', 'file_name': 'Ishita internship task report final.pdf', 'file_hash': '0725caba84e61e245101acf2903a3c966f570ed1b933ecd9accffaf253ca00d4', 'upload_time': '2025-06-06T05:50:20.552626'}]
+2025-06-06 11:20:21,857 - __main__ - INFO - Entered text extraction module
+2025-06-06 11:20:26,957 - __main__ - INFO - successfully extracted the text.
+2025-06-06 11:20:26,967 - __main__ - INFO - Entered chunk_text function
+2025-06-06 11:20:28,579 - __main__ - INFO - Exiting chunk_text function.
+2025-06-06 11:20:29,486 - __main__ - INFO - Entered get_embeddings funtion
+2025-06-06 11:20:31,310 - __main__ - ERROR - Error generating embeddings for the document: Error embedding content: 429 Resource has been exhausted (e.g. check quota).
+2025-06-06 11:20:31,315 - __main__ - INFO - some error in uploading and chunk generation cannot access local variable 'embedding' where it is not associated with a value
+2025-06-06 11:20:44,789 - __main__ - INFO - Entered login function
+2025-06-06 11:20:44,801 - __main__ - INFO - Exiting login function
+2025-06-06 11:20:45,135 - __main__ - INFO - file bytes recieved.
+2025-06-06 11:20:45,146 - __main__ - INFO - got file hash.
+2025-06-06 11:20:45,236 - __main__ - INFO - Existing data in the uploaded_files table. data=[{'id': '2895de42-5bd4-41c7-8ce0-73ce4d6e591e', 'user_email': 'ishitafaujdar111003@gmail.com', 'file_name': 'Ishita internship task report final.pdf', 'file_hash': '0725caba84e61e245101acf2903a3c966f570ed1b933ecd9accffaf253ca00d4', 'upload_time': '2025-06-06T05:50:20.552626'}] count=None
+2025-06-06 11:52:21,748 - __main__ - ERROR - Error starting the gemini-langchian stuff. 2 validation errors for HuggingFaceEmbeddings
+repo_id
+  Extra inputs are not permitted [type=extra_forbidden, input_value='sentence-transformers/all-MiniLM-L6-v2', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/extra_forbidden
+huggingfacehub_api_token
+  Extra inputs are not permitted [type=extra_forbidden, input_value='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', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/extra_forbidden
+2025-06-06 11:52:21,895 - __main__ - INFO - Entered login function
+2025-06-06 11:52:21,935 - __main__ - INFO - Exiting login function
+2025-06-06 11:52:23,689 - __main__ - INFO - file bytes recieved.
+2025-06-06 11:52:23,701 - __main__ - INFO - got file hash.
+2025-06-06 11:52:23,854 - __main__ - INFO - Existing data in the uploaded_files table. data=[{'id': '2895de42-5bd4-41c7-8ce0-73ce4d6e591e', 'user_email': 'ishitafaujdar111003@gmail.com', 'file_name': 'Ishita internship task report final.pdf', 'file_hash': '0725caba84e61e245101acf2903a3c966f570ed1b933ecd9accffaf253ca00d4', 'upload_time': '2025-06-06T05:50:20.552626'}] count=None
+2025-06-06 11:52:23,859 - __main__ - ERROR - some error in the post submit part: name 'query_embeddings' is not defined
+2025-06-06 11:55:24,263 - __main__ - ERROR - Error downloading packages: Error downloading packages: Module langchain_community.embeddings not found. Please install langchain-community to access this module. You can install it using `pip install -U langchain-community`
+2025-06-06 11:55:24,406 - __main__ - ERROR - Error starting the gemini-langchian stuff. name 'HuggingFaceEmbeddings' is not defined
+2025-06-06 11:55:24,422 - __main__ - INFO - Entered login function
+2025-06-06 11:55:24,439 - __main__ - INFO - Exiting login function
+2025-06-06 11:55:24,717 - __main__ - INFO - file bytes recieved.
+2025-06-06 11:55:24,727 - __main__ - INFO - got file hash.
+2025-06-06 11:55:24,831 - __main__ - INFO - Existing data in the uploaded_files table. data=[{'id': '2895de42-5bd4-41c7-8ce0-73ce4d6e591e', 'user_email': 'ishitafaujdar111003@gmail.com', 'file_name': 'Ishita internship task report final.pdf', 'file_hash': '0725caba84e61e245101acf2903a3c966f570ed1b933ecd9accffaf253ca00d4', 'upload_time': '2025-06-06T05:50:20.552626'}] count=None
+2025-06-06 11:55:24,844 - __main__ - ERROR - some error in the post submit part: name 'query_embeddings' is not defined
+2025-06-06 11:58:06,656 - __main__ - ERROR - Error starting the gemini-langchian stuff. 2 validation errors for HuggingFaceEmbeddings
+repo_id
+  Extra inputs are not permitted [type=extra_forbidden, input_value='sentence-transformers/all-MiniLM-L6-v2', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/extra_forbidden
+huggingfacehub_api_token
+  Extra inputs are not permitted [type=extra_forbidden, input_value='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', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/extra_forbidden
+2025-06-06 11:58:06,893 - __main__ - INFO - Entered login function
+2025-06-06 11:58:06,972 - __main__ - INFO - Exiting login function
+2025-06-06 11:58:08,093 - __main__ - INFO - file bytes recieved.
+2025-06-06 11:58:08,106 - __main__ - INFO - got file hash.
+2025-06-06 11:58:08,217 - __main__ - INFO - Existing data in the uploaded_files table. data=[{'id': '2895de42-5bd4-41c7-8ce0-73ce4d6e591e', 'user_email': 'ishitafaujdar111003@gmail.com', 'file_name': 'Ishita internship task report final.pdf', 'file_hash': '0725caba84e61e245101acf2903a3c966f570ed1b933ecd9accffaf253ca00d4', 'upload_time': '2025-06-06T05:50:20.552626'}] count=None
+2025-06-06 11:58:08,226 - __main__ - ERROR - some error in the post submit part: name 'query_embeddings' is not defined

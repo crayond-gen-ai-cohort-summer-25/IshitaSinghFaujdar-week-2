@@ -1,0 +1,20 @@
+2025-06-06 15:05:43,387 - __main__ - INFO - Entered login function
+2025-06-06 15:05:43,387 - __main__ - INFO - Entered login function
+2025-06-06 15:05:43,396 - __main__ - INFO - Exiting login function
+2025-06-06 15:05:43,396 - __main__ - INFO - Exiting login function
+2025-06-06 15:05:43,648 - __main__ - INFO - file bytes recieved.
+2025-06-06 15:05:43,648 - __main__ - INFO - file bytes recieved.
+2025-06-06 15:05:43,653 - __main__ - INFO - got file hash.
+2025-06-06 15:05:43,653 - __main__ - INFO - got file hash.
+2025-06-06 15:05:43,771 - __main__ - INFO - Existing data in the uploaded_files table. data=[{'id': '0b95ad51-3a2c-462d-8847-2bdfb18d0bc2', 'user_email': 'ishitafaujdar111003@gmail.com', 'file_name': 'Ishita internship task report final.pdf', 'file_hash': '0725caba84e61e245101acf2903a3c966f570ed1b933ecd9accffaf253ca00d4', 'upload_time': '2025-06-06T09:34:56.933339'}] count=None
+2025-06-06 15:05:43,771 - __main__ - INFO - Existing data in the uploaded_files table. data=[{'id': '0b95ad51-3a2c-462d-8847-2bdfb18d0bc2', 'user_email': 'ishitafaujdar111003@gmail.com', 'file_name': 'Ishita internship task report final.pdf', 'file_hash': '0725caba84e61e245101acf2903a3c966f570ed1b933ecd9accffaf253ca00d4', 'upload_time': '2025-06-06T09:34:56.933339'}] count=None
+2025-06-06 15:05:44,516 - __main__ - INFO - Retrieved the chunks from the database: data=[] count=None
+2025-06-06 15:05:44,516 - __main__ - INFO - Retrieved the chunks from the database: data=[] count=None
+2025-06-06 15:05:44,577 - __main__ - INFO - Retrieved the filenames for the context: data=[{'id': '0b95ad51-3a2c-462d-8847-2bdfb18d0bc2', 'file_name': 'Ishita internship task report final.pdf'}] count=None
+2025-06-06 15:05:44,577 - __main__ - INFO - Retrieved the filenames for the context: data=[{'id': '0b95ad51-3a2c-462d-8847-2bdfb18d0bc2', 'file_name': 'Ishita internship task report final.pdf'}] count=None
+2025-06-06 15:05:44,867 - __main__ - ERROR - some error in the post submit part: Expected 2D array, got 1D array instead:
+array=[].
+Reshape your data either using array.reshape(-1, 1) if your data has a single feature or array.reshape(1, -1) if it contains a single sample.
+2025-06-06 15:05:44,867 - __main__ - ERROR - some error in the post submit part: Expected 2D array, got 1D array instead:
+array=[].
+Reshape your data either using array.reshape(-1, 1) if your data has a single feature or array.reshape(1, -1) if it contains a single sample.

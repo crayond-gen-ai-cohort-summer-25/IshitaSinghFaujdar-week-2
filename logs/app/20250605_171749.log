@@ -1,0 +1,81 @@
+2025-06-05 17:17:52,758 - __main__ - INFO - Form state set to login
+2025-06-05 17:17:52,764 - __main__ - INFO - Entered login function
+2025-06-05 17:17:52,773 - __main__ - ERROR - Login Failed: {e}
+2025-06-05 17:17:52,775 - __main__ - INFO - Exiting login function
+2025-06-05 17:18:35,593 - __main__ - INFO - Entered login function
+2025-06-05 17:18:35,602 - __main__ - ERROR - Login Failed: {e}
+2025-06-05 17:18:35,604 - __main__ - INFO - Exiting login function
+2025-06-05 17:19:31,891 - __main__ - INFO - Entered login function
+2025-06-05 17:19:31,904 - __main__ - ERROR - Login Failed: You must provide either an email or phone number and a password
+2025-06-05 17:19:31,910 - __main__ - INFO - Exiting login function
+2025-06-05 17:19:39,496 - __main__ - INFO - Form state set to login
+2025-06-05 17:19:39,501 - __main__ - INFO - Entered login function
+2025-06-05 17:19:39,523 - __main__ - ERROR - Login Failed: You must provide either an email or phone number and a password
+2025-06-05 17:19:39,537 - __main__ - INFO - Exiting login function
+2025-06-05 17:23:29,663 - __main__ - INFO - Entered login function
+2025-06-05 17:23:29,711 - __main__ - ERROR - Login Failed: You must provide either an email or phone number and a password
+2025-06-05 17:23:29,717 - __main__ - INFO - Exiting login function
+2025-06-05 17:23:33,447 - __main__ - INFO - Form state set to login
+2025-06-05 17:23:33,454 - __main__ - INFO - Entered login function
+2025-06-05 17:23:33,474 - __main__ - ERROR - Login Failed: You must provide either an email or phone number and a password
+2025-06-05 17:23:33,479 - __main__ - INFO - Exiting login function
+2025-06-05 17:23:34,926 - __main__ - INFO - Form state set to signup
+2025-06-05 17:23:34,931 - __main__ - INFO - Entered signup function
+2025-06-05 17:23:34,942 - __main__ - INFO - Exiting signup function
+2025-06-05 17:23:36,042 - __main__ - INFO - Form state set to login
+2025-06-05 17:23:36,049 - __main__ - INFO - Entered login function
+2025-06-05 17:23:36,069 - __main__ - ERROR - Login Failed: You must provide either an email or phone number and a password
+2025-06-05 17:23:36,078 - __main__ - INFO - Exiting login function
+2025-06-05 17:26:07,154 - __main__ - INFO - Entered login function
+2025-06-05 17:26:07,197 - __main__ - INFO - Exiting login function
+2025-06-05 17:26:12,297 - __main__ - INFO - Form state set to signup
+2025-06-05 17:26:12,302 - __main__ - INFO - Entered signup function
+2025-06-05 17:26:12,314 - __main__ - INFO - Exiting signup function
+2025-06-05 17:26:31,414 - __main__ - INFO - Entered signup function
+2025-06-05 17:26:35,459 - __main__ - ERROR - Sign Up failed: 'AuthResponse' object has no attribute 'get'
+2025-06-05 17:26:35,463 - __main__ - INFO - Exiting signup function
+2025-06-05 17:30:15,711 - __main__ - INFO - Entered signup function
+2025-06-05 17:30:15,780 - __main__ - INFO - Exiting signup function
+2025-06-05 17:30:38,349 - __main__ - INFO - Entered signup function
+2025-06-05 17:30:41,816 - __main__ - INFO - Recieved response id='6d5a9c19-95f9-47ec-85c9-82e539a4500c' app_metadata={'provider': 'email', 'providers': ['email']} user_metadata={'email': 'ishitafaujdar111003@gmail.com', 'email_verified': False, 'phone_verified': False, 'sub': '6d5a9c19-95f9-47ec-85c9-82e539a4500c'} aud='authenticated' confirmation_sent_at=datetime.datetime(2025, 6, 5, 12, 0, 38, 873616, tzinfo=TzInfo(UTC)) recovery_sent_at=None email_change_sent_at=None new_email=None new_phone=None invited_at=None action_link=None email='ishitafaujdar111003@gmail.com' phone='' created_at=datetime.datetime(2025, 6, 5, 11, 56, 32, 250506, tzinfo=TzInfo(UTC)) confirmed_at=None email_confirmed_at=None phone_confirmed_at=None last_sign_in_at=None role='authenticated' updated_at=datetime.datetime(2025, 6, 5, 12, 0, 41, 683301, tzinfo=TzInfo(UTC)) identities=[UserIdentity(id='6d5a9c19-95f9-47ec-85c9-82e539a4500c', identity_id='1671bd40-90d1-45f2-8f83-eb1aab3bc2a2', user_id='6d5a9c19-95f9-47ec-85c9-82e539a4500c', identity_data={'email': 'ishitafaujdar111003@gmail.com', 'email_verified': False, 'phone_verified': False, 'sub': '6d5a9c19-95f9-47ec-85c9-82e539a4500c'}, provider='email', created_at=datetime.datetime(2025, 6, 5, 11, 56, 32, 300463, tzinfo=TzInfo(UTC)), last_sign_in_at=datetime.datetime(2025, 6, 5, 11, 56, 32, 298810, tzinfo=TzInfo(UTC)), updated_at=datetime.datetime(2025, 6, 5, 11, 56, 32, 300463, tzinfo=TzInfo(UTC)))] is_anonymous=False factors=None
+2025-06-05 17:30:41,826 - __main__ - INFO - set the session state as: login
+2025-06-05 17:30:41,830 - __main__ - INFO - Exiting signup function
+2025-06-05 17:30:51,815 - __main__ - INFO - Form state set to login
+2025-06-05 17:30:51,824 - __main__ - INFO - Entered login function
+2025-06-05 17:30:51,836 - __main__ - INFO - Exiting login function
+2025-06-05 17:32:08,844 - __main__ - INFO - Entered login function
+2025-06-05 17:32:09,186 - __main__ - ERROR - Login Failed: Invalid login credentials
+2025-06-05 17:32:09,190 - __main__ - INFO - Exiting login function
+2025-06-05 17:32:24,766 - __main__ - INFO - Form state set to login
+2025-06-05 17:32:24,772 - __main__ - INFO - Entered login function
+2025-06-05 17:32:24,782 - __main__ - INFO - Exiting login function
+2025-06-05 17:32:43,330 - __main__ - INFO - Entered login function
+2025-06-05 17:32:43,621 - __main__ - ERROR - Login Failed: Invalid login credentials
+2025-06-05 17:32:43,628 - __main__ - INFO - Exiting login function
+2025-06-05 17:36:51,127 - __main__ - INFO - Form state set to signup
+2025-06-05 17:36:51,159 - __main__ - INFO - Entered signup function
+2025-06-05 17:36:51,176 - __main__ - INFO - Exiting signup function
+2025-06-05 17:37:08,115 - __main__ - INFO - Entered signup function
+2025-06-05 17:37:08,603 - __main__ - ERROR - Sign Up failed: Password should be at least 6 characters.
+2025-06-05 17:37:08,608 - __main__ - INFO - Exiting signup function
+2025-06-05 17:37:41,452 - __main__ - INFO - Entered signup function
+2025-06-05 17:37:44,102 - __main__ - INFO - Recieved response id='8b4ef452-3299-4bcf-9c6b-06657ad052a2' app_metadata={'provider': 'email', 'providers': ['email']} user_metadata={'email': 'ishitafaujdar111003@gmail.com', 'email_verified': False, 'phone_verified': False, 'sub': '8b4ef452-3299-4bcf-9c6b-06657ad052a2'} aud='authenticated' confirmation_sent_at=datetime.datetime(2025, 6, 5, 12, 7, 41, 604123, tzinfo=TzInfo(UTC)) recovery_sent_at=None email_change_sent_at=None new_email=None new_phone=None invited_at=None action_link=None email='ishitafaujdar111003@gmail.com' phone='' created_at=datetime.datetime(2025, 6, 5, 12, 7, 41, 596343, tzinfo=TzInfo(UTC)) confirmed_at=None email_confirmed_at=None phone_confirmed_at=None last_sign_in_at=None role='authenticated' updated_at=datetime.datetime(2025, 6, 5, 12, 7, 43, 945747, tzinfo=TzInfo(UTC)) identities=[UserIdentity(id='8b4ef452-3299-4bcf-9c6b-06657ad052a2', identity_id='ac2893de-5b5a-45db-afc3-975ec2506719', user_id='8b4ef452-3299-4bcf-9c6b-06657ad052a2', identity_data={'email': 'ishitafaujdar111003@gmail.com', 'email_verified': False, 'phone_verified': False, 'sub': '8b4ef452-3299-4bcf-9c6b-06657ad052a2'}, provider='email', created_at=datetime.datetime(2025, 6, 5, 12, 7, 41, 601007, tzinfo=TzInfo(UTC)), last_sign_in_at=datetime.datetime(2025, 6, 5, 12, 7, 41, 600955, tzinfo=TzInfo(UTC)), updated_at=datetime.datetime(2025, 6, 5, 12, 7, 41, 601007, tzinfo=TzInfo(UTC)))] is_anonymous=False factors=None
+2025-06-05 17:37:44,122 - __main__ - INFO - set the session state as: login
+2025-06-05 17:37:44,126 - __main__ - INFO - Exiting signup function
+2025-06-05 17:37:51,662 - __main__ - INFO - Form state set to login
+2025-06-05 17:37:51,668 - __main__ - INFO - Entered login function
+2025-06-05 17:37:51,680 - __main__ - INFO - Exiting login function
+2025-06-05 17:38:24,645 - __main__ - INFO - Entered login function
+2025-06-05 17:38:24,934 - __main__ - ERROR - Login Failed: 'AuthResponse' object has no attribute 'get'
+2025-06-05 17:38:24,942 - __main__ - INFO - Exiting login function
+2025-06-05 17:38:35,292 - __main__ - INFO - Form state set to login
+2025-06-05 17:38:35,300 - __main__ - INFO - Entered login function
+2025-06-05 17:38:35,312 - __main__ - INFO - Exiting login function
+2025-06-05 17:38:48,097 - __main__ - INFO - Entered login function
+2025-06-05 17:38:48,328 - __main__ - ERROR - Login Failed: 'AuthResponse' object has no attribute 'get'
+2025-06-05 17:38:48,333 - __main__ - INFO - Exiting login function
+2025-06-05 17:39:35,396 - __main__ - INFO - Entered login function
+2025-06-05 17:39:36,069 - __main__ - INFO - Response: provider_token=None provider_refresh_token=None access_token='eyJhbGciOiJIUzI1NiIsImtpZCI6Ikx0YUFrd1BYOFdTNjhBSVIiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NyeXNncXFjcHJ4ZmZ1cmtkbmdqLnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiI4YjRlZjQ1Mi0zMjk5LTRiY2YtOWM2Yi0wNjY1N2FkMDUyYTIiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzQ5MTI4OTc1LCJpYXQiOjE3NDkxMjUzNzUsImVtYWlsIjoiaXNoaXRhZmF1amRhcjExMTAwM0BnbWFpbC5jb20iLCJwaG9uZSI6IiIsImFwcF9tZXRhZGF0YSI6eyJwcm92aWRlciI6ImVtYWlsIiwicHJvdmlkZXJzIjpbImVtYWlsIl19LCJ1c2VyX21ldGFkYXRhIjp7ImVtYWlsIjoiaXNoaXRhZmF1amRhcjExMTAwM0BnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwicGhvbmVfdmVyaWZpZWQiOmZhbHNlLCJzdWIiOiI4YjRlZjQ1Mi0zMjk5LTRiY2YtOWM2Yi0wNjY1N2FkMDUyYTIifSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJwYXNzd29yZCIsInRpbWVzdGFtcCI6MTc0OTEyNTM3NX1dLCJzZXNzaW9uX2lkIjoiZGI4YTk1MDMtMzg5NS00MWJjLTk3ZDgtMjkwZTEyMGUyNDUyIiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.BNkti8m6j0yDwFbWjE8ULoMnuQ5_x7aGsyW1_uP62_o' refresh_token='qr7aiqvu3th2' expires_in=3600 expires_at=1749128975 token_type='bearer' user=User(id='8b4ef452-3299-4bcf-9c6b-06657ad052a2', app_metadata={'provider': 'email', 'providers': ['email']}, user_metadata={'email': 'ishitafaujdar111003@gmail.com', 'email_verified': True, 'phone_verified': False, 'sub': '8b4ef452-3299-4bcf-9c6b-06657ad052a2'}, aud='authenticated', confirmation_sent_at=datetime.datetime(2025, 6, 5, 12, 7, 41, 604123, tzinfo=TzInfo(UTC)), recovery_sent_at=None, email_change_sent_at=None, new_email=None, new_phone=None, invited_at=None, action_link=None, email='ishitafaujdar111003@gmail.com', phone='', created_at=datetime.datetime(2025, 6, 5, 12, 7, 41, 596343, tzinfo=TzInfo(UTC)), confirmed_at=datetime.datetime(2025, 6, 5, 12, 8, 8, 455920, tzinfo=TzInfo(UTC)), email_confirmed_at=datetime.datetime(2025, 6, 5, 12, 8, 8, 455920, tzinfo=TzInfo(UTC)), phone_confirmed_at=None, last_sign_in_at=datetime.datetime(2025, 6, 5, 12, 9, 35, 938795, tzinfo=TzInfo(UTC)), role='authenticated', updated_at=datetime.datetime(2025, 6, 5, 12, 9, 35, 940519, tzinfo=TzInfo(UTC)), identities=[UserIdentity(id='8b4ef452-3299-4bcf-9c6b-06657ad052a2', identity_id='ac2893de-5b5a-45db-afc3-975ec2506719', user_id='8b4ef452-3299-4bcf-9c6b-06657ad052a2', identity_data={'email': 'ishitafaujdar111003@gmail.com', 'email_verified': True, 'phone_verified': False, 'sub': '8b4ef452-3299-4bcf-9c6b-06657ad052a2'}, provider='email', created_at=datetime.datetime(2025, 6, 5, 12, 7, 41, 601007, tzinfo=TzInfo(UTC)), last_sign_in_at=datetime.datetime(2025, 6, 5, 12, 7, 41, 600955, tzinfo=TzInfo(UTC)), updated_at=datetime.datetime(2025, 6, 5, 12, 7, 41, 601007, tzinfo=TzInfo(UTC)))], is_anonymous=False, factors=None)
+2025-06-05 17:39:36,224 - __main__ - INFO - Set session state as True
+2025-06-05 17:39:36,258 - __main__ - INFO - set session state user email as ishitafaujdar111003@gmail.com
+2025-06-05 17:39:36,264 - __main__ - INFO - Exiting login function
