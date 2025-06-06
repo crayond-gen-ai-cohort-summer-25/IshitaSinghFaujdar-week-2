@@ -13,6 +13,7 @@ try:
     from sklearn.metrics.pairwise import cosine_similarity
     from langchain_google_genai import ChatGoogleGenerativeAI
     import numpy as np
+    from langchain.embeddings import HuggingFaceEmbeddings
     error=0
 except Exception as e:
     error=(f"Error downloading packages: {e}")
@@ -40,13 +41,11 @@ supabase = create_client(supabaseUrl, supabaseKey)
 try:
     GOOGLE_API_KEY= os.getenv("GEMINI_KEY")
     llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash-001", google_api_key=GOOGLE_API_KEY)
-    doc_embeddings = GoogleGenerativeAIEmbeddings(
-        google_api_key=GOOGLE_API_KEY,
-        model="models/gemini-embedding-exp-03-07",task_type="RETRIEVAL_DOCUMENT")
-    query_embeddings = GoogleGenerativeAIEmbeddings(
-        google_api_key=GOOGLE_API_KEY,
-        model="models/gemini-embedding-exp-03-07", task_type="RETRIEVAL_QUERY"
-    )
+    doc_embeddings = hf = HuggingFaceEmbeddings(
+    repo_id="sentence-transformers/all-MiniLM-L6-v2",
+      huggingfacehub_api_token=os.getenv("hf_key")
+)
+    query_embeddings = doc_embeddings
 except Exception as e:
     logger.error(f"Error starting the gemini-langchian stuff. {e}")
 st.title("QnA chatbot")
