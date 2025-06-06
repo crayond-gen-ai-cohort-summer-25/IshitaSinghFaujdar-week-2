@@ -1,17 +1,21 @@
-import streamlit as st
-import streamlit_authenticator as stauth
-import os
-import logging
-from datetime import datetime
-from dotenv import load_dotenv
-from supabase import create_client,Client
-import fitz
-import hashlib
-from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain_google_genai import GoogleGenerativeAIEmbeddings
-from sklearn.metrics.pairwise import cosine_similarity
-from langchain_google_genai import ChatGoogleGenerativeAI
-import numpy as np
+try:
+    import streamlit as st
+    import streamlit_authenticator as stauth
+    import os
+    import logging
+    from datetime import datetime
+    from dotenv import load_dotenv
+    from supabase import create_client,Client
+    import pdfplumber
+    import hashlib
+    from langchain.text_splitter import RecursiveCharacterTextSplitter
+    from langchain_google_genai import GoogleGenerativeAIEmbeddings
+    from sklearn.metrics.pairwise import cosine_similarity
+    from langchain_google_genai import ChatGoogleGenerativeAI
+    import numpy as np
+    error=0
+except Exception as e:
+    error=(f"Error downloading packages: {e}")
 
 
 logger=logging.getLogger(__name__)
@@ -26,17 +30,25 @@ formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(messag
 handler.setFormatter(formatter)
 logger.addHandler(handler)
 
+if error:
+    logger.error(f"Error downloading packages: {error}")
 load_dotenv()
 
 supabaseUrl = os.getenv("supabase_url")
 supabaseKey =os.getenv("supabase_api_key")
 supabase = create_client(supabaseUrl, supabaseKey)
-GOOGLE_API_KEY= os.getenv("GEMINI_KEY")
-llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash-001", google_api_key=GOOGLE_API_KEY)
-doc_embeddings = GoogleGenerativeAIEmbeddings(model="models/gemini-embedding-exp-03-07",task_type="RETRIEVAL_DOCUMENT")
-query_embeddings = GoogleGenerativeAIEmbeddings(
-    model="models/gemini-embedding-exp-03-07", task_type="RETRIEVAL_QUERY"
-)
+try:
+    GOOGLE_API_KEY= os.getenv("GEMINI_KEY")
+    llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash-001", google_api_key=GOOGLE_API_KEY)
+    doc_embeddings = GoogleGenerativeAIEmbeddings(
+        google_api_key=GOOGLE_API_KEY,
+        model="models/gemini-embedding-exp-03-07",task_type="RETRIEVAL_DOCUMENT")
+    query_embeddings = GoogleGenerativeAIEmbeddings(
+        google_api_key=GOOGLE_API_KEY,
+        model="models/gemini-embedding-exp-03-07", task_type="RETRIEVAL_QUERY"
+    )
+except Exception as e:
+    logger.error(f"Error starting the gemini-langchian stuff. {e}")
 st.title("QnA chatbot")
 if not st.session_state.get("logged_in", False):
     signup = st.button("Sign Up") 
@@ -54,11 +66,14 @@ def get_file_hash(file_bytes):
     return hashlib.sha256(file_bytes).hexdigest()
 
 def extract_text_from_pdf(file):
-    doc = fitz.open(stream=file.read(), filetype="pdf")
+    logger.info("Entered text extraction module")
     text = ""
-    for page in doc:
-        text += page.get_text()
-    return text.strip().replace("\n", " ")
+    with pdfplumber.open(file) as pdf:
+        for page in pdf.pages:
+            text += page.extract_text() or ""
+    final_text=text.strip().replace("\n", " ")
+    logger.info(f"Extracted text : {final_text}")
+    return final_text
 
 def chunk_text(text):
     logger.info("Entered chunk_text function")
@@ -67,15 +82,23 @@ def chunk_text(text):
             chunk_size=500,
             chunk_overlap=100
         )
+        chunks=splitter.split_text(text)
+        logger.info(f"Generated chunks {chunks}")
     except Exception as e:
         logger.error(f"Error generating chunks: {e}")
     logger.info("Exiting chunk_text function.")
-    return splitter.split_text(text)
+    return chunks
 
 
 def get_embeddings(chunks):
     logger.info("Entered get_embeddings funtion")
-    return doc_embeddings.embed_documents(chunks)
+    try:
+        embedding=doc_embeddings.embed_documents(chunks)
+        
+        logger.info(f"Generated embeddings for document: {embedding}")
+    except Exception as e:
+        logger.error(f"Error generating embeddings for the document: {e}")
+    return embedding
 
 def delete_file_and_chunks(file_id):
     logger.info("Entered delete file function.")
@@ -117,7 +140,7 @@ def loggedin():
                     delete_file_and_chunks(file["id"])
                     st.success(f"{file['file_name']} deleted")
                     st.rerun()
-    except:
+    except Exception as e:
         logger.error(f"some error: {e}")
         
         
@@ -274,7 +297,7 @@ def login():
                     logger.info(f"Set session state as {st.session_state['logged_in']}")
                     st.session_state["user_email"]=email
                     logger.info(f"set session state user email as {st.session_state['user_email']}")
-                
+                    
     
         except Exception as e:
             st.error("Login Failed")
