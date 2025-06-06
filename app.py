@@ -22,7 +22,7 @@ try:
 except Exception as e:
     error=(f"Error downloading packages: {e}")
 
-
+#Logging
 logger=logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
 timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
@@ -37,6 +37,9 @@ logger.addHandler(handler)
 
 if error:
     logger.error(f"Error downloading packages: {error}")
+    
+    
+#API and other setup
 load_dotenv()
 
 supabaseUrl = os.getenv("supabase_url")
@@ -59,18 +62,8 @@ def load_llm():
 
 llm = load_llm()
 
-st.title("QnA chatbot")
-if not st.session_state.get("logged_in", False):
-    signup = st.button("Sign Up") 
-    login = st.button("Log In")
 
-    if signup: 
-        logger.info("Form state set to signup")
-        st.session_state["form_state"] = "signup"
-    if login:
-        logger.info("Form state set to login")
-        st.session_state["form_state"] = "login"
-
+#Functions
 
 def get_file_hash(file_bytes):
     return hashlib.sha256(file_bytes).hexdigest()
@@ -125,13 +118,10 @@ def delete_file_and_chunks(file_id):
 
 def loggedin():
     st.sidebar.success(f"Welcome,{st.session_state.get('user_email','User')} to your Dashboard!")
-    st.sidebar.header("Uploaded Files")
-    prompt=st.text_input("Enter your Prompt!")
-    st.subheader("Response:")  
-    output=st.empty()
     if st.sidebar.button("Logout"):
         st.session_state.clear()
         st.rerun()
+    st.sidebar.header("Uploaded Files")
         
     user_email = st.session_state.get("user_email")
     if not user_email:
@@ -144,7 +134,7 @@ def loggedin():
             .execute().data
     except Exception as e:
         logger.warning(f"File fetching failed {e}")
-        st.warning("No files found.")
+        st.write("No files found.")
     try:
         for file in files:
             with st.sidebar.expander(file["file_name"]):
@@ -158,6 +148,10 @@ def loggedin():
         
         
     uploaded_files= st.file_uploader("Upload the files here.",accept_multiple_files=True, type=['pdf'])
+    prompt=st.text_input("Enter your Prompt!")
+    st.subheader("Response:") 
+    output=st.empty()
+    
     if uploaded_files:
         try: 
             for uploaded_file in uploaded_files:
@@ -316,23 +310,41 @@ def login():
                 if response.session:
                     logger.info(f"Response: {response.session}")
                     st.success("Login Successful!")
-                    st.session_state["logged_in"]= True
-                    logger.info(f"Set session state as {st.session_state['logged_in']}")
+                    st.session_state["form_state"]= "1"
+                    logger.info(f"Set session state as {st.session_state['form_state']}")
                     st.session_state["user_email"]=email
                     logger.info(f"set session state user email as {st.session_state['user_email']}")
+                    st.rerun()
                     
     
         except Exception as e:
             st.error("Login Failed")
             logger.error(f"Login Failed: {e}")
         logger.info("Exiting login function")
-            
+
+
+
+
+#MAIN 
+st.title("QnA chatbot")
 if "form_state" not in st.session_state:
-    st.session_state["form_state"] = ""      
-        
-if st.session_state["form_state"] == "login":
-    login()
-if st.session_state.get("logged_in", False):
-    loggedin()
+    st.session_state["form_state"] = ""  
+if st.session_state["form_state"] == "1":
+    loggedin()   
 elif st.session_state["form_state"] == "signup":
     sign_up()
+elif st.session_state["form_state"] == "login":
+    login()   
+elif st.session_state["form_state"] == "":
+
+    if st.button("Sign Up"): 
+        st.session_state["form_state"] = "signup"
+        st.rerun()
+
+    if st.button("Log In"):
+        st.session_state["form_state"] = "login"
+        st.rerun()
+
+
+
+    
