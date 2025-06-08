@@ -237,7 +237,7 @@ def loggedin():
             similarities = cosine_similarity([prompt_embed], chunk_vectors)[0]
         
             logger.info(f"performed cosine similarity: {len(similarities)} similairites")
-            k=3
+            k=5
             top_indices = np.argsort(similarities)[::-1][:k]
             top_chunks = [(user_chunks[i], similarities[i]) for i in top_indices]
             with st.expander("Matched Chunks:"):
@@ -248,7 +248,7 @@ def loggedin():
                     st.markdown(f"**Score:** {round(score, 4)}")
                     st.code(chunk["chunk_text"])
                     st.markdown("---")
-            full_prompt=f"""You are a helpful RAG based assistant. Use the context below and answer the user question.
+            full_prompt=f"""You are a helpful RAG based assistant. Use the context below and answer the user question in as easy and elaborate way as you can.in as detail as you can.
             Context: {context}
             Question: {prompt}
             """
