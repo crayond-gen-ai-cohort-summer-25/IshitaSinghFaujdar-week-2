@@ -20,7 +20,7 @@ formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(messag
 handler.setFormatter(formatter)
 logger.addHandler(handler)
 
-    
+logger.info(" Starting procedure")    
 #API and other setup
 load_dotenv()
 
