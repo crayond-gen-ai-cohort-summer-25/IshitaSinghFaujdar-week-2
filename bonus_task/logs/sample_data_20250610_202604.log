@@ -1,0 +1,207 @@
+2025-06-10 20:26:05,086 - __main__ - INFO - Starting MAIN function of sample_data.py
+2025-06-10 20:26:05,087 - __main__ - INFO - Entered Reset table function.
+2025-06-10 20:26:05,764 - __main__ - INFO - Executed. All tables reset successfuly
+2025-06-10 20:26:05,765 - __main__ - INFO - Entered the insert users function
+2025-06-10 20:26:05,865 - __main__ - INFO - Inserted into users, recieved response: data=[{'user_id': 33, 'name': 'Randy Wong', 'email': 'nicholasperry@example.org'}] count=None
+2025-06-10 20:26:05,865 - __main__ - INFO - uid:33
+2025-06-10 20:26:05,961 - __main__ - INFO - Inserted into users, recieved response: data=[{'user_id': 34, 'name': 'Monica Duncan', 'email': 'caguilar@example.com'}] count=None
+2025-06-10 20:26:05,962 - __main__ - INFO - uid:34
+2025-06-10 20:26:06,059 - __main__ - INFO - Inserted into users, recieved response: data=[{'user_id': 35, 'name': 'Crystal Morales', 'email': 'mcurry@example.com'}] count=None
+2025-06-10 20:26:06,059 - __main__ - INFO - uid:35
+2025-06-10 20:26:06,152 - __main__ - INFO - Inserted into users, recieved response: data=[{'user_id': 36, 'name': 'Vincent Banks', 'email': 'josepowell@example.org'}] count=None
+2025-06-10 20:26:06,152 - __main__ - INFO - uid:36
+2025-06-10 20:26:06,246 - __main__ - INFO - Inserted into users, recieved response: data=[{'user_id': 37, 'name': 'Angel Mata', 'email': 'hashley@example.com'}] count=None
+2025-06-10 20:26:06,247 - __main__ - INFO - uid:37
+2025-06-10 20:26:06,341 - __main__ - INFO - Inserted into users, recieved response: data=[{'user_id': 38, 'name': 'Nicholas Garcia', 'email': 'cisnerosshelby@example.net'}] count=None
+2025-06-10 20:26:06,341 - __main__ - INFO - uid:38
+2025-06-10 20:26:06,438 - __main__ - INFO - Inserted into users, recieved response: data=[{'user_id': 39, 'name': 'Amanda Spears', 'email': 'sullivanjames@example.com'}] count=None
+2025-06-10 20:26:06,438 - __main__ - INFO - uid:39
+2025-06-10 20:26:06,532 - __main__ - INFO - Inserted into users, recieved response: data=[{'user_id': 40, 'name': 'Jonathan Holder', 'email': 'charlespace@example.net'}] count=None
+2025-06-10 20:26:06,532 - __main__ - INFO - uid:40
+2025-06-10 20:26:06,687 - __main__ - INFO - Inserted into users, recieved response: data=[{'user_id': 41, 'name': 'Raymond Williamson', 'email': 'michaeltaylor@example.com'}] count=None
+2025-06-10 20:26:06,687 - __main__ - INFO - uid:41
+2025-06-10 20:26:06,778 - __main__ - INFO - Inserted into users, recieved response: data=[{'user_id': 42, 'name': 'Clayton Brown', 'email': 'tamaramoore@example.net'}] count=None
+2025-06-10 20:26:06,779 - __main__ - INFO - uid:42
+2025-06-10 20:26:06,779 - __main__ - INFO - User IDS: [33, 34, 35, 36, 37, 38, 39, 40, 41, 42]
+2025-06-10 20:26:06,779 - __main__ - INFO - Inserting accounts function
+2025-06-10 20:26:06,967 - __main__ - INFO - Inserted into accounts, recieved response: data=[{'account_id': 29, 'user_id': 33, 'account_name': 'Television Account', 'balance': 4910.02}] count=None
+2025-06-10 20:26:07,077 - __main__ - INFO - Inserted into accounts, recieved response: data=[{'account_id': 30, 'user_id': 33, 'account_name': 'War Account', 'balance': 2834.4}] count=None
+2025-06-10 20:26:07,332 - __main__ - INFO - Inserted into accounts, recieved response: data=[{'account_id': 31, 'user_id': 34, 'account_name': 'Stop Account', 'balance': 7466.19}] count=None
+2025-06-10 20:26:07,525 - __main__ - INFO - Inserted into accounts, recieved response: data=[{'account_id': 32, 'user_id': 34, 'account_name': 'Budget Account', 'balance': 8357.94}] count=None
+2025-06-10 20:26:07,623 - __main__ - INFO - Inserted into accounts, recieved response: data=[{'account_id': 33, 'user_id': 35, 'account_name': 'Discuss Account', 'balance': 4099.0}] count=None
+2025-06-10 20:26:07,805 - __main__ - INFO - Inserted into accounts, recieved response: data=[{'account_id': 34, 'user_id': 36, 'account_name': 'Owner Account', 'balance': 2148.5}] count=None
+2025-06-10 20:26:07,933 - __main__ - INFO - Inserted into accounts, recieved response: data=[{'account_id': 35, 'user_id': 37, 'account_name': 'Writer Account', 'balance': 2516.48}] count=None
+2025-06-10 20:26:08,085 - __main__ - INFO - Inserted into accounts, recieved response: data=[{'account_id': 36, 'user_id': 38, 'account_name': 'Edge Account', 'balance': 6280.81}] count=None
+2025-06-10 20:26:08,181 - __main__ - INFO - Inserted into accounts, recieved response: data=[{'account_id': 37, 'user_id': 39, 'account_name': 'Continue Account', 'balance': 1139.85}] count=None
+2025-06-10 20:26:08,359 - __main__ - INFO - Inserted into accounts, recieved response: data=[{'account_id': 38, 'user_id': 39, 'account_name': 'Rest Account', 'balance': 9333.78}] count=None
+2025-06-10 20:26:08,452 - __main__ - INFO - Inserted into accounts, recieved response: data=[{'account_id': 39, 'user_id': 40, 'account_name': 'Although Account', 'balance': 4560.86}] count=None
+2025-06-10 20:26:08,556 - __main__ - INFO - Inserted into accounts, recieved response: data=[{'account_id': 40, 'user_id': 40, 'account_name': 'Catch Account', 'balance': 3924.49}] count=None
+2025-06-10 20:26:08,651 - __main__ - INFO - Inserted into accounts, recieved response: data=[{'account_id': 41, 'user_id': 41, 'account_name': 'Be Account', 'balance': 5545.92}] count=None
+2025-06-10 20:26:08,821 - __main__ - INFO - Inserted into accounts, recieved response: data=[{'account_id': 42, 'user_id': 42, 'account_name': 'Weight Account', 'balance': 9376.62}] count=None
+2025-06-10 20:26:08,918 - __main__ - INFO - Inserted into accounts, recieved response: data=[{'account_id': 43, 'user_id': 42, 'account_name': 'Clear Account', 'balance': 7841.29}] count=None
+2025-06-10 20:26:08,918 - __main__ - INFO - account ids: [29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43]
+2025-06-10 20:26:08,918 - __main__ - INFO - Inserting categories function
+2025-06-10 20:26:09,715 - __main__ - INFO - Exiting insert categories
+2025-06-10 20:26:09,716 - __main__ - INFO - Inserting transactions.
+2025-06-10 20:26:09,845 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 201, 'account_id': 32, 'category_id': 20, 'amount': 3586.23, 'transaction_date': '2025-04-10', 'description': 'Light truth try later.'}] count=None
+2025-06-10 20:26:09,976 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 202, 'account_id': 36, 'category_id': 19, 'amount': 2365.21, 'transaction_date': '2025-05-24', 'description': 'Skin situation lot.'}] count=None
+2025-06-10 20:26:10,074 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 203, 'account_id': 38, 'category_id': 18, 'amount': 1849.21, 'transaction_date': '2025-05-11', 'description': 'Production.'}] count=None
+2025-06-10 20:26:10,196 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 204, 'account_id': 37, 'category_id': 18, 'amount': 2155.16, 'transaction_date': '2025-06-09', 'description': 'Specific business.'}] count=None
+2025-06-10 20:26:10,354 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 205, 'account_id': 29, 'category_id': 18, 'amount': 2292.12, 'transaction_date': '2025-04-07', 'description': 'Cost.'}] count=None
+2025-06-10 20:26:10,525 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 206, 'account_id': 31, 'category_id': 19, 'amount': 1495.87, 'transaction_date': '2025-03-26', 'description': 'Center song group.'}] count=None
+2025-06-10 20:26:10,664 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 207, 'account_id': 37, 'category_id': 16, 'amount': 2813.48, 'transaction_date': '2025-04-06', 'description': 'Choice.'}] count=None
+2025-06-10 20:26:10,789 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 208, 'account_id': 42, 'category_id': 20, 'amount': 1415.72, 'transaction_date': '2025-05-20', 'description': 'Find front color.'}] count=None
+2025-06-10 20:26:10,888 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 209, 'account_id': 33, 'category_id': 20, 'amount': 4051.19, 'transaction_date': '2025-05-21', 'description': 'Beat before size left.'}] count=None
+2025-06-10 20:26:10,998 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 210, 'account_id': 29, 'category_id': 20, 'amount': 3075.36, 'transaction_date': '2025-03-20', 'description': 'Yard because.'}] count=None
+2025-06-10 20:26:11,105 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 211, 'account_id': 35, 'category_id': 20, 'amount': 3442.93, 'transaction_date': '2025-04-25', 'description': 'Dark city agent.'}] count=None
+2025-06-10 20:26:11,198 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 212, 'account_id': 43, 'category_id': 20, 'amount': 3483.44, 'transaction_date': '2025-05-21', 'description': 'Color many majority.'}] count=None
+2025-06-10 20:26:11,304 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 213, 'account_id': 30, 'category_id': 18, 'amount': 3396.65, 'transaction_date': '2025-05-28', 'description': 'Act Republican.'}] count=None
+2025-06-10 20:26:11,399 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 214, 'account_id': 30, 'category_id': 18, 'amount': 657.18, 'transaction_date': '2025-04-29', 'description': 'Care though.'}] count=None
+2025-06-10 20:26:11,491 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 215, 'account_id': 34, 'category_id': 21, 'amount': 1191.44, 'transaction_date': '2025-03-18', 'description': 'Each hit product.'}] count=None
+2025-06-10 20:26:11,584 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 216, 'account_id': 31, 'category_id': 20, 'amount': 2783.75, 'transaction_date': '2025-06-06', 'description': 'Wish return film.'}] count=None
+2025-06-10 20:26:11,684 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 217, 'account_id': 43, 'category_id': 20, 'amount': 790.34, 'transaction_date': '2025-04-29', 'description': 'Most high since same.'}] count=None
+2025-06-10 20:26:11,802 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 218, 'account_id': 33, 'category_id': 18, 'amount': 3585.18, 'transaction_date': '2025-06-02', 'description': 'Either discussion.'}] count=None
+2025-06-10 20:26:11,894 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 219, 'account_id': 35, 'category_id': 19, 'amount': 948.36, 'transaction_date': '2025-05-01', 'description': 'Property wind.'}] count=None
+2025-06-10 20:26:11,989 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 220, 'account_id': 41, 'category_id': 19, 'amount': 378.3, 'transaction_date': '2025-05-11', 'description': 'Continue least decide allow.'}] count=None
+2025-06-10 20:26:12,081 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 221, 'account_id': 33, 'category_id': 16, 'amount': 1926.03, 'transaction_date': '2025-04-24', 'description': 'City three scientist.'}] count=None
+2025-06-10 20:26:12,168 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 222, 'account_id': 40, 'category_id': 17, 'amount': 3882.96, 'transaction_date': '2025-04-15', 'description': 'Discuss traditional identify.'}] count=None
+2025-06-10 20:26:12,263 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 223, 'account_id': 34, 'category_id': 20, 'amount': 3125.38, 'transaction_date': '2025-05-20', 'description': 'During usually might could.'}] count=None
+2025-06-10 20:26:12,360 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 224, 'account_id': 42, 'category_id': 20, 'amount': 2277.92, 'transaction_date': '2025-04-24', 'description': 'Plan time.'}] count=None
+2025-06-10 20:26:12,453 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 225, 'account_id': 33, 'category_id': 20, 'amount': 4352.15, 'transaction_date': '2025-03-31', 'description': 'At oil Mr.'}] count=None
+2025-06-10 20:26:12,548 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 226, 'account_id': 34, 'category_id': 16, 'amount': 4995.05, 'transaction_date': '2025-06-07', 'description': 'Reality name.'}] count=None
+2025-06-10 20:26:12,640 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 227, 'account_id': 29, 'category_id': 17, 'amount': 3813.74, 'transaction_date': '2025-05-03', 'description': 'Budget life.'}] count=None
+2025-06-10 20:26:12,731 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 228, 'account_id': 35, 'category_id': 20, 'amount': 3938.57, 'transaction_date': '2025-03-12', 'description': 'Size in.'}] count=None
+2025-06-10 20:26:12,825 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 229, 'account_id': 30, 'category_id': 18, 'amount': 1784.84, 'transaction_date': '2025-03-26', 'description': 'Parent prevent inside.'}] count=None
+2025-06-10 20:26:12,913 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 230, 'account_id': 33, 'category_id': 19, 'amount': 177.72, 'transaction_date': '2025-03-18', 'description': 'Great.'}] count=None
+2025-06-10 20:26:13,000 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 231, 'account_id': 40, 'category_id': 17, 'amount': 1517.51, 'transaction_date': '2025-05-04', 'description': 'Local measure sense.'}] count=None
+2025-06-10 20:26:13,096 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 232, 'account_id': 33, 'category_id': 18, 'amount': 1730.45, 'transaction_date': '2025-05-05', 'description': 'Their media.'}] count=None
+2025-06-10 20:26:13,187 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 233, 'account_id': 32, 'category_id': 18, 'amount': 2595.83, 'transaction_date': '2025-04-12', 'description': 'Into six husband.'}] count=None
+2025-06-10 20:26:13,279 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 234, 'account_id': 40, 'category_id': 19, 'amount': 4701.15, 'transaction_date': '2025-03-25', 'description': 'Miss.'}] count=None
+2025-06-10 20:26:13,371 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 235, 'account_id': 31, 'category_id': 18, 'amount': 3183.33, 'transaction_date': '2025-03-23', 'description': 'Coach act.'}] count=None
+2025-06-10 20:26:13,468 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 236, 'account_id': 42, 'category_id': 20, 'amount': 4439.24, 'transaction_date': '2025-03-26', 'description': 'Experience.'}] count=None
+2025-06-10 20:26:13,561 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 237, 'account_id': 30, 'category_id': 17, 'amount': 4038.76, 'transaction_date': '2025-04-22', 'description': 'Strategy close.'}] count=None
+2025-06-10 20:26:13,653 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 238, 'account_id': 40, 'category_id': 20, 'amount': 2945.06, 'transaction_date': '2025-03-21', 'description': 'Decade value.'}] count=None
+2025-06-10 20:26:13,756 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 239, 'account_id': 36, 'category_id': 20, 'amount': 4910.67, 'transaction_date': '2025-03-14', 'description': 'Short interest four decision.'}] count=None
+2025-06-10 20:26:13,847 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 240, 'account_id': 37, 'category_id': 16, 'amount': 2365.27, 'transaction_date': '2025-05-29', 'description': 'Simple deal half.'}] count=None
+2025-06-10 20:26:13,937 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 241, 'account_id': 39, 'category_id': 20, 'amount': 297.24, 'transaction_date': '2025-03-20', 'description': 'Check attorney stuff.'}] count=None
+2025-06-10 20:26:14,026 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 242, 'account_id': 42, 'category_id': 16, 'amount': 3991.61, 'transaction_date': '2025-05-25', 'description': 'Case within discuss.'}] count=None
+2025-06-10 20:26:14,116 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 243, 'account_id': 36, 'category_id': 21, 'amount': 1080.22, 'transaction_date': '2025-05-15', 'description': 'Event focus black.'}] count=None
+2025-06-10 20:26:14,213 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 244, 'account_id': 35, 'category_id': 20, 'amount': 1616.52, 'transaction_date': '2025-05-01', 'description': 'Thus election decision authority.'}] count=None
+2025-06-10 20:26:14,391 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 245, 'account_id': 29, 'category_id': 18, 'amount': 3727.61, 'transaction_date': '2025-04-20', 'description': 'Society course.'}] count=None
+2025-06-10 20:26:14,492 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 246, 'account_id': 30, 'category_id': 21, 'amount': 2626.54, 'transaction_date': '2025-06-03', 'description': 'His.'}] count=None
+2025-06-10 20:26:14,581 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 247, 'account_id': 42, 'category_id': 16, 'amount': 2800.5, 'transaction_date': '2025-05-08', 'description': 'Kid letter fear.'}] count=None
+2025-06-10 20:26:14,672 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 248, 'account_id': 37, 'category_id': 17, 'amount': 1365.58, 'transaction_date': '2025-05-04', 'description': 'Happy miss seek.'}] count=None
+2025-06-10 20:26:14,762 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 249, 'account_id': 34, 'category_id': 20, 'amount': 1596.38, 'transaction_date': '2025-04-21', 'description': 'Cup his cold.'}] count=None
+2025-06-10 20:26:14,850 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 250, 'account_id': 42, 'category_id': 21, 'amount': 4688.88, 'transaction_date': '2025-06-08', 'description': 'Direction suffer.'}] count=None
+2025-06-10 20:26:14,941 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 251, 'account_id': 39, 'category_id': 18, 'amount': 3272.89, 'transaction_date': '2025-03-16', 'description': 'Create lot.'}] count=None
+2025-06-10 20:26:15,029 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 252, 'account_id': 38, 'category_id': 18, 'amount': 1818.32, 'transaction_date': '2025-03-31', 'description': 'Road pull cup.'}] count=None
+2025-06-10 20:26:15,124 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 253, 'account_id': 30, 'category_id': 18, 'amount': 846.94, 'transaction_date': '2025-04-10', 'description': 'Believe.'}] count=None
+2025-06-10 20:26:15,218 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 254, 'account_id': 39, 'category_id': 16, 'amount': 920.37, 'transaction_date': '2025-04-09', 'description': 'Gas.'}] count=None
+2025-06-10 20:26:15,307 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 255, 'account_id': 41, 'category_id': 21, 'amount': 3527.04, 'transaction_date': '2025-03-30', 'description': 'Environment party.'}] count=None
+2025-06-10 20:26:15,395 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 256, 'account_id': 37, 'category_id': 17, 'amount': 4186.19, 'transaction_date': '2025-05-03', 'description': 'News authority.'}] count=None
+2025-06-10 20:26:15,490 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 257, 'account_id': 34, 'category_id': 19, 'amount': 2332.65, 'transaction_date': '2025-04-15', 'description': 'Four work tax.'}] count=None
+2025-06-10 20:26:15,578 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 258, 'account_id': 31, 'category_id': 20, 'amount': 3696.26, 'transaction_date': '2025-04-23', 'description': 'Fly method how.'}] count=None
+2025-06-10 20:26:15,677 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 259, 'account_id': 35, 'category_id': 16, 'amount': 4982.6, 'transaction_date': '2025-05-01', 'description': 'Ready ok.'}] count=None
+2025-06-10 20:26:15,769 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 260, 'account_id': 39, 'category_id': 20, 'amount': 2974.79, 'transaction_date': '2025-06-08', 'description': 'Fine.'}] count=None
+2025-06-10 20:26:15,864 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 261, 'account_id': 36, 'category_id': 17, 'amount': 2158.34, 'transaction_date': '2025-03-24', 'description': 'Future civil.'}] count=None
+2025-06-10 20:26:15,961 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 262, 'account_id': 42, 'category_id': 20, 'amount': 2085.19, 'transaction_date': '2025-06-04', 'description': 'Grow argue shoulder.'}] count=None
+2025-06-10 20:26:16,051 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 263, 'account_id': 31, 'category_id': 17, 'amount': 3481.22, 'transaction_date': '2025-05-03', 'description': 'Bad inside.'}] count=None
+2025-06-10 20:26:16,143 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 264, 'account_id': 31, 'category_id': 20, 'amount': 4517.67, 'transaction_date': '2025-05-21', 'description': 'News car light.'}] count=None
+2025-06-10 20:26:16,232 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 265, 'account_id': 34, 'category_id': 17, 'amount': 2446.51, 'transaction_date': '2025-04-28', 'description': 'House throw.'}] count=None
+2025-06-10 20:26:16,327 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 266, 'account_id': 37, 'category_id': 21, 'amount': 2549.43, 'transaction_date': '2025-04-26', 'description': 'Can likely article.'}] count=None
+2025-06-10 20:26:16,436 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 267, 'account_id': 41, 'category_id': 17, 'amount': 956.31, 'transaction_date': '2025-06-06', 'description': 'Herself majority.'}] count=None
+2025-06-10 20:26:16,539 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 268, 'account_id': 36, 'category_id': 16, 'amount': 656.2, 'transaction_date': '2025-04-08', 'description': 'Growth.'}] count=None
+2025-06-10 20:26:16,640 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 269, 'account_id': 41, 'category_id': 18, 'amount': 4277.45, 'transaction_date': '2025-05-22', 'description': 'Respond common.'}] count=None
+2025-06-10 20:26:16,743 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 270, 'account_id': 30, 'category_id': 19, 'amount': 843.64, 'transaction_date': '2025-06-08', 'description': 'Bit offer near.'}] count=None
+2025-06-10 20:26:16,836 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 271, 'account_id': 37, 'category_id': 19, 'amount': 4611.35, 'transaction_date': '2025-05-02', 'description': 'Hotel answer baby.'}] count=None
+2025-06-10 20:26:16,930 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 272, 'account_id': 41, 'category_id': 20, 'amount': 3246.3, 'transaction_date': '2025-03-14', 'description': 'Relationship year same.'}] count=None
+2025-06-10 20:26:17,027 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 273, 'account_id': 29, 'category_id': 20, 'amount': 231.61, 'transaction_date': '2025-03-23', 'description': 'Deal pick cut.'}] count=None
+2025-06-10 20:26:17,126 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 274, 'account_id': 31, 'category_id': 18, 'amount': 990.2, 'transaction_date': '2025-05-19', 'description': 'Suggest decide.'}] count=None
+2025-06-10 20:26:17,215 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 275, 'account_id': 41, 'category_id': 18, 'amount': 2295.01, 'transaction_date': '2025-05-24', 'description': 'Letter which.'}] count=None
+2025-06-10 20:26:17,318 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 276, 'account_id': 35, 'category_id': 16, 'amount': 4193.06, 'transaction_date': '2025-05-03', 'description': 'College.'}] count=None
+2025-06-10 20:26:17,413 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 277, 'account_id': 31, 'category_id': 19, 'amount': 1266.07, 'transaction_date': '2025-04-14', 'description': 'Public later leader.'}] count=None
+2025-06-10 20:26:17,503 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 278, 'account_id': 31, 'category_id': 16, 'amount': 1946.6, 'transaction_date': '2025-03-12', 'description': 'Laugh right film.'}] count=None
+2025-06-10 20:26:17,597 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 279, 'account_id': 34, 'category_id': 20, 'amount': 4838.37, 'transaction_date': '2025-04-28', 'description': 'Try resource.'}] count=None
+2025-06-10 20:26:17,688 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 280, 'account_id': 36, 'category_id': 18, 'amount': 260.17, 'transaction_date': '2025-05-02', 'description': 'Sign.'}] count=None
+2025-06-10 20:26:17,776 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 281, 'account_id': 38, 'category_id': 18, 'amount': 3739.01, 'transaction_date': '2025-04-07', 'description': 'Board soldier.'}] count=None
+2025-06-10 20:26:17,866 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 282, 'account_id': 33, 'category_id': 17, 'amount': 3581.23, 'transaction_date': '2025-05-24', 'description': 'Fight foreign do.'}] count=None
+2025-06-10 20:26:17,966 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 283, 'account_id': 29, 'category_id': 20, 'amount': 429.97, 'transaction_date': '2025-03-15', 'description': 'Scene early.'}] count=None
+2025-06-10 20:26:18,069 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 284, 'account_id': 35, 'category_id': 19, 'amount': 2734.43, 'transaction_date': '2025-05-07', 'description': 'Production professor analysis.'}] count=None
+2025-06-10 20:26:18,156 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 285, 'account_id': 39, 'category_id': 18, 'amount': 812.36, 'transaction_date': '2025-05-22', 'description': 'Rate.'}] count=None
+2025-06-10 20:26:18,250 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 286, 'account_id': 31, 'category_id': 20, 'amount': 3632.41, 'transaction_date': '2025-04-10', 'description': 'Physical our activity.'}] count=None
+2025-06-10 20:26:18,339 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 287, 'account_id': 39, 'category_id': 19, 'amount': 2377.79, 'transaction_date': '2025-04-09', 'description': 'Hold hope.'}] count=None
+2025-06-10 20:26:18,429 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 288, 'account_id': 36, 'category_id': 16, 'amount': 859.15, 'transaction_date': '2025-03-23', 'description': 'Station color available.'}] count=None
+2025-06-10 20:26:18,523 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 289, 'account_id': 30, 'category_id': 20, 'amount': 4472.93, 'transaction_date': '2025-03-16', 'description': 'Example exist.'}] count=None
+2025-06-10 20:26:18,617 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 290, 'account_id': 29, 'category_id': 16, 'amount': 4968.46, 'transaction_date': '2025-05-29', 'description': 'Nature forget himself.'}] count=None
+2025-06-10 20:26:18,708 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 291, 'account_id': 35, 'category_id': 21, 'amount': 3818.14, 'transaction_date': '2025-03-14', 'description': 'Half foot.'}] count=None
+2025-06-10 20:26:18,820 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 292, 'account_id': 43, 'category_id': 16, 'amount': 1739.03, 'transaction_date': '2025-04-24', 'description': 'End fear.'}] count=None
+2025-06-10 20:26:18,917 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 293, 'account_id': 34, 'category_id': 21, 'amount': 3055.73, 'transaction_date': '2025-05-21', 'description': 'Article power close.'}] count=None
+2025-06-10 20:26:19,011 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 294, 'account_id': 30, 'category_id': 20, 'amount': 1569.65, 'transaction_date': '2025-04-26', 'description': 'Because product only.'}] count=None
+2025-06-10 20:26:19,104 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 295, 'account_id': 41, 'category_id': 19, 'amount': 3172.23, 'transaction_date': '2025-04-19', 'description': 'Cut speak similar.'}] count=None
+2025-06-10 20:26:19,207 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 296, 'account_id': 41, 'category_id': 20, 'amount': 2440.59, 'transaction_date': '2025-05-29', 'description': 'Ball garden also modern.'}] count=None
+2025-06-10 20:26:19,298 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 297, 'account_id': 42, 'category_id': 19, 'amount': 2854.08, 'transaction_date': '2025-04-07', 'description': 'Help section.'}] count=None
+2025-06-10 20:26:19,389 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 298, 'account_id': 35, 'category_id': 20, 'amount': 1488.05, 'transaction_date': '2025-04-08', 'description': 'Popular term hand.'}] count=None
+2025-06-10 20:26:19,481 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 299, 'account_id': 43, 'category_id': 19, 'amount': 4580.91, 'transaction_date': '2025-06-06', 'description': 'Fish sort PM.'}] count=None
+2025-06-10 20:26:19,578 - __main__ - INFO - Transacction insertion status: data=[{'transaction_id': 300, 'account_id': 29, 'category_id': 20, 'amount': 205.24, 'transaction_date': '2025-06-06', 'description': 'My fund.'}] count=None
+2025-06-10 20:26:19,578 - __main__ - INFO - Inserting budgets.
+2025-06-10 20:26:19,670 - __main__ - INFO -  budget insertion status: data=[{'budget_id': 121, 'user_id': 33, 'category_id': 16, 'monthly_limit': 3605.75}] count=None
+2025-06-10 20:26:19,766 - __main__ - INFO -  budget insertion status: data=[{'budget_id': 122, 'user_id': 33, 'category_id': 17, 'monthly_limit': 1646.16}] count=None
+2025-06-10 20:26:19,858 - __main__ - INFO -  budget insertion status: data=[{'budget_id': 123, 'user_id': 33, 'category_id': 18, 'monthly_limit': 7014.38}] count=None
+2025-06-10 20:26:19,950 - __main__ - INFO -  budget insertion status: data=[{'budget_id': 124, 'user_id': 33, 'category_id': 19, 'monthly_limit': 1244.83}] count=None
+2025-06-10 20:26:20,045 - __main__ - INFO -  budget insertion status: data=[{'budget_id': 125, 'user_id': 33, 'category_id': 20, 'monthly_limit': 5904.11}] count=None
+2025-06-10 20:26:20,138 - __main__ - INFO -  budget insertion status: data=[{'budget_id': 126, 'user_id': 33, 'category_id': 21, 'monthly_limit': 1858.98}] count=None
+2025-06-10 20:26:20,232 - __main__ - INFO -  budget insertion status: data=[{'budget_id': 127, 'user_id': 34, 'category_id': 16, 'monthly_limit': 7628.04}] count=None
+2025-06-10 20:26:20,321 - __main__ - INFO -  budget insertion status: data=[{'budget_id': 128, 'user_id': 34, 'category_id': 17, 'monthly_limit': 4098.22}] count=None
+2025-06-10 20:26:20,411 - __main__ - INFO -  budget insertion status: data=[{'budget_id': 129, 'user_id': 34, 'category_id': 18, 'monthly_limit': 1423.24}] count=None
+2025-06-10 20:26:20,499 - __main__ - INFO -  budget insertion status: data=[{'budget_id': 130, 'user_id': 34, 'category_id': 19, 'monthly_limit': 4052.08}] count=None
+2025-06-10 20:26:20,589 - __main__ - INFO -  budget insertion status: data=[{'budget_id': 131, 'user_id': 34, 'category_id': 20, 'monthly_limit': 4308.46}] count=None
+2025-06-10 20:26:20,679 - __main__ - INFO -  budget insertion status: data=[{'budget_id': 132, 'user_id': 34, 'category_id': 21, 'monthly_limit': 5462.85}] count=None
+2025-06-10 20:26:20,771 - __main__ - INFO -  budget insertion status: data=[{'budget_id': 133, 'user_id': 35, 'category_id': 16, 'monthly_limit': 2394.52}] count=None
+2025-06-10 20:26:20,862 - __main__ - INFO -  budget insertion status: data=[{'budget_id': 134, 'user_id': 35, 'category_id': 17, 'monthly_limit': 7661.97}] count=None
+2025-06-10 20:26:20,960 - __main__ - INFO -  budget insertion status: data=[{'budget_id': 135, 'user_id': 35, 'category_id': 18, 'monthly_limit': 1001.62}] count=None
+2025-06-10 20:26:21,056 - __main__ - INFO -  budget insertion status: data=[{'budget_id': 136, 'user_id': 35, 'category_id': 19, 'monthly_limit': 6267.93}] count=None
+2025-06-10 20:26:21,160 - __main__ - INFO -  budget insertion status: data=[{'budget_id': 137, 'user_id': 35, 'category_id': 20, 'monthly_limit': 5353.2}] count=None
+2025-06-10 20:26:21,247 - __main__ - INFO -  budget insertion status: data=[{'budget_id': 138, 'user_id': 35, 'category_id': 21, 'monthly_limit': 5705.61}] count=None
+2025-06-10 20:26:21,335 - __main__ - INFO -  budget insertion status: data=[{'budget_id': 139, 'user_id': 36, 'category_id': 16, 'monthly_limit': 7580.09}] count=None
+2025-06-10 20:26:21,423 - __main__ - INFO -  budget insertion status: data=[{'budget_id': 140, 'user_id': 36, 'category_id': 17, 'monthly_limit': 5442.11}] count=None
+2025-06-10 20:26:21,521 - __main__ - INFO -  budget insertion status: data=[{'budget_id': 141, 'user_id': 36, 'category_id': 18, 'monthly_limit': 3764.4}] count=None
+2025-06-10 20:26:21,613 - __main__ - INFO -  budget insertion status: data=[{'budget_id': 142, 'user_id': 36, 'category_id': 19, 'monthly_limit': 6901.73}] count=None
+2025-06-10 20:26:21,702 - __main__ - INFO -  budget insertion status: data=[{'budget_id': 143, 'user_id': 36, 'category_id': 20, 'monthly_limit': 4638.03}] count=None
+2025-06-10 20:26:21,791 - __main__ - INFO -  budget insertion status: data=[{'budget_id': 144, 'user_id': 36, 'category_id': 21, 'monthly_limit': 4960.95}] count=None
+2025-06-10 20:26:21,888 - __main__ - INFO -  budget insertion status: data=[{'budget_id': 145, 'user_id': 37, 'category_id': 16, 'monthly_limit': 2999.61}] count=None
+2025-06-10 20:26:21,981 - __main__ - INFO -  budget insertion status: data=[{'budget_id': 146, 'user_id': 37, 'category_id': 17, 'monthly_limit': 4793.88}] count=None
+2025-06-10 20:26:22,074 - __main__ - INFO -  budget insertion status: data=[{'budget_id': 147, 'user_id': 37, 'category_id': 18, 'monthly_limit': 5329.55}] count=None
+2025-06-10 20:26:22,167 - __main__ - INFO -  budget insertion status: data=[{'budget_id': 148, 'user_id': 37, 'category_id': 19, 'monthly_limit': 6178.78}] count=None
+2025-06-10 20:26:22,258 - __main__ - INFO -  budget insertion status: data=[{'budget_id': 149, 'user_id': 37, 'category_id': 20, 'monthly_limit': 3644.35}] count=None
+2025-06-10 20:26:22,345 - __main__ - INFO -  budget insertion status: data=[{'budget_id': 150, 'user_id': 37, 'category_id': 21, 'monthly_limit': 4599.54}] count=None
+2025-06-10 20:26:22,441 - __main__ - INFO -  budget insertion status: data=[{'budget_id': 151, 'user_id': 38, 'category_id': 16, 'monthly_limit': 3943.08}] count=None
+2025-06-10 20:26:22,542 - __main__ - INFO -  budget insertion status: data=[{'budget_id': 152, 'user_id': 38, 'category_id': 17, 'monthly_limit': 7596.42}] count=None
+2025-06-10 20:26:22,632 - __main__ - INFO -  budget insertion status: data=[{'budget_id': 153, 'user_id': 38, 'category_id': 18, 'monthly_limit': 7303.26}] count=None
+2025-06-10 20:26:22,725 - __main__ - INFO -  budget insertion status: data=[{'budget_id': 154, 'user_id': 38, 'category_id': 19, 'monthly_limit': 5660.28}] count=None
+2025-06-10 20:26:22,817 - __main__ - INFO -  budget insertion status: data=[{'budget_id': 155, 'user_id': 38, 'category_id': 20, 'monthly_limit': 7693.76}] count=None
+2025-06-10 20:26:22,909 - __main__ - INFO -  budget insertion status: data=[{'budget_id': 156, 'user_id': 38, 'category_id': 21, 'monthly_limit': 4713.32}] count=None
+2025-06-10 20:26:23,002 - __main__ - INFO -  budget insertion status: data=[{'budget_id': 157, 'user_id': 39, 'category_id': 16, 'monthly_limit': 4135.98}] count=None
+2025-06-10 20:26:23,100 - __main__ - INFO -  budget insertion status: data=[{'budget_id': 158, 'user_id': 39, 'category_id': 17, 'monthly_limit': 7151.23}] count=None
+2025-06-10 20:26:23,190 - __main__ - INFO -  budget insertion status: data=[{'budget_id': 159, 'user_id': 39, 'category_id': 18, 'monthly_limit': 3203.26}] count=None
+2025-06-10 20:26:23,279 - __main__ - INFO -  budget insertion status: data=[{'budget_id': 160, 'user_id': 39, 'category_id': 19, 'monthly_limit': 1776.4}] count=None
+2025-06-10 20:26:23,367 - __main__ - INFO -  budget insertion status: data=[{'budget_id': 161, 'user_id': 39, 'category_id': 20, 'monthly_limit': 4209.98}] count=None
+2025-06-10 20:26:23,460 - __main__ - INFO -  budget insertion status: data=[{'budget_id': 162, 'user_id': 39, 'category_id': 21, 'monthly_limit': 7932.04}] count=None
+2025-06-10 20:26:23,550 - __main__ - INFO -  budget insertion status: data=[{'budget_id': 163, 'user_id': 40, 'category_id': 16, 'monthly_limit': 6991.66}] count=None
+2025-06-10 20:26:23,641 - __main__ - INFO -  budget insertion status: data=[{'budget_id': 164, 'user_id': 40, 'category_id': 17, 'monthly_limit': 5188.85}] count=None
+2025-06-10 20:26:23,731 - __main__ - INFO -  budget insertion status: data=[{'budget_id': 165, 'user_id': 40, 'category_id': 18, 'monthly_limit': 4667.55}] count=None
+2025-06-10 20:26:23,820 - __main__ - INFO -  budget insertion status: data=[{'budget_id': 166, 'user_id': 40, 'category_id': 19, 'monthly_limit': 6162.36}] count=None
+2025-06-10 20:26:23,917 - __main__ - INFO -  budget insertion status: data=[{'budget_id': 167, 'user_id': 40, 'category_id': 20, 'monthly_limit': 2545.33}] count=None
+2025-06-10 20:26:24,006 - __main__ - INFO -  budget insertion status: data=[{'budget_id': 168, 'user_id': 40, 'category_id': 21, 'monthly_limit': 6458.63}] count=None
+2025-06-10 20:26:24,096 - __main__ - INFO -  budget insertion status: data=[{'budget_id': 169, 'user_id': 41, 'category_id': 16, 'monthly_limit': 6938.54}] count=None
+2025-06-10 20:26:24,187 - __main__ - INFO -  budget insertion status: data=[{'budget_id': 170, 'user_id': 41, 'category_id': 17, 'monthly_limit': 4296.63}] count=None
+2025-06-10 20:26:24,278 - __main__ - INFO -  budget insertion status: data=[{'budget_id': 171, 'user_id': 41, 'category_id': 18, 'monthly_limit': 1168.63}] count=None
+2025-06-10 20:26:24,373 - __main__ - INFO -  budget insertion status: data=[{'budget_id': 172, 'user_id': 41, 'category_id': 19, 'monthly_limit': 1839.87}] count=None
+2025-06-10 20:26:24,471 - __main__ - INFO -  budget insertion status: data=[{'budget_id': 173, 'user_id': 41, 'category_id': 20, 'monthly_limit': 5285.12}] count=None
+2025-06-10 20:26:24,558 - __main__ - INFO -  budget insertion status: data=[{'budget_id': 174, 'user_id': 41, 'category_id': 21, 'monthly_limit': 1990.32}] count=None
+2025-06-10 20:26:24,653 - __main__ - INFO -  budget insertion status: data=[{'budget_id': 175, 'user_id': 42, 'category_id': 16, 'monthly_limit': 5952.09}] count=None
+2025-06-10 20:26:24,757 - __main__ - INFO -  budget insertion status: data=[{'budget_id': 176, 'user_id': 42, 'category_id': 17, 'monthly_limit': 6579.93}] count=None
+2025-06-10 20:26:24,854 - __main__ - INFO -  budget insertion status: data=[{'budget_id': 177, 'user_id': 42, 'category_id': 18, 'monthly_limit': 1112.71}] count=None
+2025-06-10 20:26:24,954 - __main__ - INFO -  budget insertion status: data=[{'budget_id': 178, 'user_id': 42, 'category_id': 19, 'monthly_limit': 5454.49}] count=None
+2025-06-10 20:26:25,044 - __main__ - INFO -  budget insertion status: data=[{'budget_id': 179, 'user_id': 42, 'category_id': 20, 'monthly_limit': 1553.22}] count=None
+2025-06-10 20:26:25,139 - __main__ - INFO -  budget insertion status: data=[{'budget_id': 180, 'user_id': 42, 'category_id': 21, 'monthly_limit': 5449.47}] count=None
+2025-06-10 20:26:25,139 - __main__ - INFO - process finished.
