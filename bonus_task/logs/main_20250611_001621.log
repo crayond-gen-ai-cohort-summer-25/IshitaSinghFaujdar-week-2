@@ -1,0 +1,53 @@
+2025-06-11 00:16:46,785 - __main__ - DEBUG - USER PROMPT:How many accounts do I have?
+2025-06-11 00:16:46,787 - __main__ - INFO - Generating SQL query from LLM. (generate_sql function)
+2025-06-11 00:16:47,700 - __main__ - DEBUG - Generated query: SELECT COUNT(account_id)
+FROM Accounts
+WHERE user_id = {user_id}
+2025-06-11 00:16:47,701 - __main__ - INFO - Running SQL query on Supabase. (run_sql function)
+2025-06-11 00:16:48,281 - __main__ - INFO - Ran the sql query. Response: [{'result': [{'count': 1}]}]
+2025-06-11 00:16:48,281 - __main__ - INFO - Formatting output using LLM. (format_result function)
+2025-06-11 00:16:48,851 - __main__ - DEBUG - AI RESPONSE: You have 1 account.
+2025-06-11 00:17:11,844 - __main__ - DEBUG - USER PROMPT:What name and email id is it registered under?
+2025-06-11 00:17:11,849 - __main__ - INFO - Generating SQL query from LLM. (generate_sql function)
+2025-06-11 00:17:12,491 - __main__ - DEBUG - Generated query: SELECT name, email FROM Users WHERE user_id = {user_id}
+2025-06-11 00:17:12,491 - __main__ - INFO - Running SQL query on Supabase. (run_sql function)
+2025-06-11 00:17:12,661 - __main__ - INFO - Ran the sql query. Response: [{'result': [{'name': 'Amanda Robertson', 'email': 'ctaylor@example.org'}]}]
+2025-06-11 00:17:12,661 - __main__ - INFO - Formatting output using LLM. (format_result function)
+2025-06-11 00:17:13,633 - __main__ - DEBUG - AI RESPONSE: Amanda Robertson, ctaylor@example.org
+2025-06-11 00:17:37,795 - __main__ - DEBUG - USER PROMPT:How many transactions have I done on from this account?
+2025-06-11 00:17:37,796 - __main__ - INFO - Generating SQL query from LLM. (generate_sql function)
+2025-06-11 00:17:38,795 - __main__ - DEBUG - Generated query: SELECT
+  COUNT(t.transaction_id)
+FROM Transactions AS t
+JOIN Accounts AS a
+  ON t.account_id = a.account_id
+JOIN Users AS u
+  ON a.user_id = u.user_id
+WHERE
+  u.user_id = {user_id}
+2025-06-11 00:17:38,795 - __main__ - INFO - Running SQL query on Supabase. (run_sql function)
+2025-06-11 00:17:38,971 - __main__ - INFO - Ran the sql query. Response: [{'result': [{'count': 3}]}]
+2025-06-11 00:17:38,971 - __main__ - INFO - Formatting output using LLM. (format_result function)
+2025-06-11 00:17:39,574 - __main__ - DEBUG - AI RESPONSE: You have made 3 transactions from this account.
+2025-06-11 00:18:00,407 - __main__ - DEBUG - USER PROMPT:Can you give me a spend analysis?
+2025-06-11 00:18:00,408 - __main__ - INFO - Generating SQL query from LLM. (generate_sql function)
+2025-06-11 00:18:01,610 - __main__ - DEBUG - Generated query: SELECT
+  c.name AS category,
+  SUM(t.amount) AS total_spent
+FROM Transactions AS t
+JOIN Categories AS c
+  ON t.category_id = c.category_id
+JOIN Accounts AS a
+  ON t.account_id = a.account_id
+JOIN Users AS u
+  ON a.user_id = u.user_id
+WHERE
+  u.user_id = {user_id}
+GROUP BY
+  c.name
+ORDER BY
+  total_spent DESC
+2025-06-11 00:18:01,610 - __main__ - INFO - Running SQL query on Supabase. (run_sql function)
+2025-06-11 00:18:01,771 - __main__ - INFO - Ran the sql query. Response: [{'result': [{'category': 'Utilities', 'total_spent': 4630.68}, {'category': 'Transport', 'total_spent': 3234.28}]}]
+2025-06-11 00:18:01,771 - __main__ - INFO - Formatting output using LLM. (format_result function)
+2025-06-11 00:18:02,544 - __main__ - DEBUG - AI RESPONSE: Utilities: $4630.68, Transport: $3234.28

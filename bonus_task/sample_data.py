@@ -43,7 +43,7 @@ def reset_tables():
     except Exception as e:
         logger.error(f"Reset table error: {e}")
         
-def insert_users(n=10):
+def insert_users(n=50):
     logger.info("Entered the insert users function")
     user_ids=[]
     try:
@@ -97,13 +97,13 @@ def insert_categories():
         logger.error(f"Error in insert categories: {e}")
     return cat_ids
 
-def insert_transactions(account_ids, category_ids, n=100):
+def insert_transactions(account_ids, category_ids, n=200):
     logger.info("Inserting transactions.")
     try:
         for _ in range(n):
             acc = random.choice(account_ids)
             cat = random.choice(category_ids)
-            amount = round(random.uniform(100, 5000), 2)
+            amount = round(random.uniform(100, 50000), 2)
             date = fake.date_between(start_date="-90d", end_date="today").isoformat()
             desc = fake.sentence(nb_words=3)
             res=supabase.table("transactions").insert({

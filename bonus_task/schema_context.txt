@@ -1,0 +1,42 @@
+Tables and Schema:
+
+1. users
+- user_id (Primary Key)
+- name
+- email
+
+2. accounts
+- account_id (Primary Key)
+- user_id (Foreign Key to users.user_id)
+- account_name
+- balance
+
+3. categories
+- category_id (Primary Key)
+- name
+
+4. transactions
+- transaction_id (Primary Key)
+- account_id (Foreign Key to accounts.account_id)
+- category_id (Foreign Key to categories.category_id)
+- amount (Money spent or received)
+- transaction_date (Date of transaction)
+- description
+
+5. budgets
+- budget_id (Primary Key)
+- user_id (Foreign Key to users.user_id)
+- month
+- year
+- amount (Budget amount)
+
+Relationships:
+- One user can have many accounts.
+- Each account can have many transactions.
+- Each transaction is associated with a category.
+- Budgets are per user per month/year.
+
+General Instructions:
+- If user_id is not available, ask for the user's name or email.
+- To get current month's expenses, use transaction_date and filter by the current month.
+- To summarize expenses per category or date range, group by category_id or transaction_date.
