@@ -1,0 +1,5 @@
+2025-06-10 21:38:43,240 - __main__ - DEBUG - USER PROMPT:how much did I spend this month?
+2025-06-10 21:38:43,241 - __main__ - INFO - Generating SQL query from LLM. (generate_sql function)
+2025-06-10 21:38:44,213 - __main__ - DEBUG - Generated query: SELECT title FROM Movie WHERE director = 'Spielberg';
+2025-06-10 21:38:44,213 - __main__ - INFO - Running SQL query on Supabase. (run_sql function)
+2025-06-10 21:38:44,945 - __main__ - ERROR - Error with running query:{'message': 'Could not find the function public.run_sql(query) in the schema cache', 'code': 'PGRST202', 'hint': None, 'details': 'Searched for the function public.run_sql with parameter query or with a single unnamed json/jsonb parameter, but no matches were found in the schema cache.'}

@@ -1,0 +1,125 @@
+2025-06-10 23:05:30,650 - __main__ - DEBUG - USER PROMPT:how much did I spent in total?
+2025-06-10 23:05:30,650 - __main__ - INFO - Generating SQL query from LLM. (generate_sql function)
+2025-06-10 23:05:32,799 - __main__ - DEBUG - Generated query: SELECT SUM(t.amount)
+FROM Transactions t
+JOIN Accounts a ON t.account_id = a.account_id
+JOIN Users u ON a.user_id = u.user_id
+WHERE u.user_id = {user_id}
+2025-06-10 23:05:32,799 - __main__ - INFO - Running SQL query on Supabase. (run_sql function)
+2025-06-10 23:05:33,492 - __main__ - ERROR - Error with running query:{'message': 'structure of query does not match function result type', 'code': '42804', 'hint': None, 'details': 'Returned type json does not match expected type jsonb in column 1.'}
+2025-06-10 23:07:08,528 - __main__ - DEBUG - USER PROMPT:how much did I spend in total?
+2025-06-10 23:07:08,529 - __main__ - INFO - Generating SQL query from LLM. (generate_sql function)
+2025-06-10 23:07:09,385 - __main__ - DEBUG - Generated query: SELECT SUM(t.amount)
+FROM Transactions t
+JOIN Accounts a ON t.account_id = a.account_id
+JOIN Users u ON a.user_id = u.user_id
+WHERE u.user_id = {user_id}
+2025-06-10 23:07:09,385 - __main__ - INFO - Running SQL query on Supabase. (run_sql function)
+2025-06-10 23:07:09,703 - __main__ - INFO - Ran the sql query. Response: [{'result': [{'sum': 33175.44}]}]
+2025-06-10 23:07:09,704 - __main__ - INFO - Formatting output using LLM. (format_result function)
+2025-06-10 23:07:10,272 - __main__ - DEBUG - AI RESPONSE: You spent a total of $33,175.44.
+2025-06-10 23:07:45,160 - __main__ - DEBUG - USER PROMPT:can you tell me where I spend my money?
+2025-06-10 23:07:45,161 - __main__ - INFO - Generating SQL query from LLM. (generate_sql function)
+2025-06-10 23:07:46,316 - __main__ - DEBUG - Generated query: SELECT
+  c.name AS category_name,
+  SUM(t.amount) AS total_spent
+FROM Transactions AS t
+JOIN Categories AS c
+  ON t.category_id = c.category_id
+JOIN Accounts AS a
+  ON t.account_id = a.account_id
+JOIN Users AS u
+  ON a.user_id = u.user_id
+WHERE
+  u.user_id = {user_id}
+GROUP BY
+  c.name
+ORDER BY
+  total_spent DESC
+2025-06-10 23:07:46,316 - __main__ - INFO - Running SQL query on Supabase. (run_sql function)
+2025-06-10 23:07:46,991 - __main__ - INFO - Ran the sql query. Response: [{'result': [{'total_spent': 18216.32, 'category_name': 'Entertainment'}, {'total_spent': 6769.36, 'category_name': 'Groceries'}, {'total_spent': 3481.22, 'category_name': 'Rent'}, {'total_spent': 2761.94, 'category_name': 'Transport'}, {'total_spent': 1946.6, 'category_name': 'Food'}]}]
+2025-06-10 23:07:46,991 - __main__ - INFO - Formatting output using LLM. (format_result function)
+2025-06-10 23:07:47,839 - __main__ - DEBUG - AI RESPONSE: You spent the most on Entertainment ($18216.32), followed by Groceries ($6769.36), Rent ($3481.22), Transport ($2761.94), and Food ($1946.60).
+2025-06-10 23:10:27,058 - __main__ - DEBUG - USER PROMPT:how many accounts do I have?
+2025-06-10 23:10:27,060 - __main__ - INFO - Generating SQL query from LLM. (generate_sql function)
+2025-06-10 23:10:27,867 - __main__ - DEBUG - Generated query: SELECT COUNT(account_id)
+FROM Accounts
+WHERE user_id = {user_id}
+2025-06-10 23:10:27,867 - __main__ - INFO - Running SQL query on Supabase. (run_sql function)
+2025-06-10 23:10:28,357 - __main__ - ERROR - Error with running query:{'message': 'syntax error at or near "many"', 'code': '42601', 'hint': None, 'details': None}
+2025-06-10 23:10:39,404 - __main__ - DEBUG - USER PROMPT:how many accounts do I have?
+2025-06-10 23:10:39,404 - __main__ - INFO - Generating SQL query from LLM. (generate_sql function)
+2025-06-10 23:10:40,130 - __main__ - DEBUG - Generated query: SELECT COUNT(account_id)
+FROM Accounts
+WHERE user_id = {user_id}
+2025-06-10 23:10:40,131 - __main__ - INFO - Running SQL query on Supabase. (run_sql function)
+2025-06-10 23:10:40,275 - __main__ - INFO - Ran the sql query. Response: [{'result': [{'count': 2}]}]
+2025-06-10 23:10:40,275 - __main__ - INFO - Formatting output using LLM. (format_result function)
+2025-06-10 23:10:41,235 - __main__ - DEBUG - AI RESPONSE: You have 2 accounts.
+2025-06-10 23:10:56,309 - __main__ - DEBUG - USER PROMPT:what's the balance in my accounts?
+2025-06-10 23:10:56,310 - __main__ - INFO - Generating SQL query from LLM. (generate_sql function)
+2025-06-10 23:10:57,041 - __main__ - DEBUG - Generated query: SELECT
+  account_name,
+  balance
+FROM Accounts
+WHERE
+  user_id = {user_id}
+2025-06-10 23:10:57,042 - __main__ - INFO - Running SQL query on Supabase. (run_sql function)
+2025-06-10 23:10:57,221 - __main__ - INFO - Ran the sql query. Response: [{'result': [{'balance': 7466.19, 'account_name': 'Stop Account'}, {'balance': 8357.94, 'account_name': 'Budget Account'}]}]
+2025-06-10 23:10:57,221 - __main__ - INFO - Formatting output using LLM. (format_result function)
+2025-06-10 23:10:58,113 - __main__ - DEBUG - AI RESPONSE: Stop Account balance: $7466.19, Budget Account balance: $8357.94.
+2025-06-10 23:11:18,863 - __main__ - DEBUG - USER PROMPT:what's the registered email for my accounts?
+2025-06-10 23:11:18,864 - __main__ - INFO - Generating SQL query from LLM. (generate_sql function)
+2025-06-10 23:11:19,823 - __main__ - DEBUG - Generated query: SELECT
+  email
+FROM Users
+WHERE
+  user_id = {user_id}
+2025-06-10 23:11:19,823 - __main__ - INFO - Running SQL query on Supabase. (run_sql function)
+2025-06-10 23:11:20,141 - __main__ - INFO - Ran the sql query. Response: [{'result': [{'email': 'caguilar@example.com'}]}]
+2025-06-10 23:11:20,141 - __main__ - INFO - Formatting output using LLM. (format_result function)
+2025-06-10 23:11:20,737 - __main__ - DEBUG - AI RESPONSE: The registered email for your account is caguilar@example.com.
+2025-06-10 23:11:47,444 - __main__ - DEBUG - USER PROMPT:How many transactions are there in total for all my accounts?
+2025-06-10 23:11:47,444 - __main__ - INFO - Generating SQL query from LLM. (generate_sql function)
+2025-06-10 23:11:48,324 - __main__ - DEBUG - Generated query: SELECT COUNT(t.transaction_id)
+FROM Transactions t
+JOIN Accounts a ON t.account_id = a.account_id
+JOIN Users u ON a.user_id = u.user_id
+WHERE u.user_id = {user_id}
+2025-06-10 23:11:48,324 - __main__ - INFO - Running SQL query on Supabase. (run_sql function)
+2025-06-10 23:11:48,488 - __main__ - INFO - Ran the sql query. Response: [{'result': [{'count': 12}]}]
+2025-06-10 23:11:48,488 - __main__ - INFO - Formatting output using LLM. (format_result function)
+2025-06-10 23:11:49,188 - __main__ - DEBUG - AI RESPONSE: There are a total of 12 transactions.
+2025-06-10 23:12:53,779 - __main__ - DEBUG - USER PROMPT:Can you tell me what name are my accounts registered under?
+2025-06-10 23:12:53,779 - __main__ - INFO - Generating SQL query from LLM. (generate_sql function)
+2025-06-10 23:12:54,533 - __main__ - DEBUG - Generated query: SELECT
+  name
+FROM Users
+WHERE
+  user_id = {user_id}
+2025-06-10 23:12:54,534 - __main__ - INFO - Running SQL query on Supabase. (run_sql function)
+2025-06-10 23:12:55,052 - __main__ - INFO - Ran the sql query. Response: [{'result': [{'name': 'Monica Duncan'}]}]
+2025-06-10 23:12:55,053 - __main__ - INFO - Formatting output using LLM. (format_result function)
+2025-06-10 23:12:55,715 - __main__ - DEBUG - AI RESPONSE: Your accounts are registered under the name Monica Duncan.
+2025-06-10 23:13:31,101 - __main__ - DEBUG - USER PROMPT:can you give me an analysis of my spending habits?
+2025-06-10 23:13:31,102 - __main__ - INFO - Generating SQL query from LLM. (generate_sql function)
+2025-06-10 23:13:32,366 - __main__ - DEBUG - Generated query: SELECT
+  c.name AS category_name,
+  SUM(t.amount) AS total_spent
+FROM Transactions AS t
+JOIN Accounts AS a
+  ON t.account_id = a.account_id
+JOIN Users AS u
+  ON a.user_id = u.user_id
+JOIN Categories AS c
+  ON t.category_id = c.category_id
+WHERE
+  u.user_id = {user_id}
+GROUP BY
+  c.name
+ORDER BY
+  total_spent DESC
+2025-06-10 23:13:32,367 - __main__ - INFO - Running SQL query on Supabase. (run_sql function)
+2025-06-10 23:13:32,556 - __main__ - INFO - Ran the sql query. Response: [{'result': [{'total_spent': 14491.85, 'category_name': 'Entertainment'}, {'total_spent': 8531.14, 'category_name': 'Food'}, {'total_spent': 7434.99, 'category_name': 'Transport'}, {'total_spent': 4688.88, 'category_name': 'Utilities'}]}]
+2025-06-10 23:13:32,557 - __main__ - INFO - Formatting output using LLM. (format_result function)
+2025-06-10 23:13:33,398 - __main__ - DEBUG - AI RESPONSE: You've spent $14491.85 on Entertainment, $8531.14 on Food, $7434.99 on Transport, and $4688.88 on Utilities.

@@ -1,0 +1,10 @@
+2025-06-10 22:11:18,118 - __main__ - DEBUG - USER PROMPT:How much did I spend this month on groceries?
+2025-06-10 22:11:18,120 - __main__ - INFO - Generating SQL query from LLM. (generate_sql function)
+2025-06-10 22:11:20,706 - __main__ - DEBUG - Generated query: SELECT SUM(T.amount)
+FROM Transactions T
+JOIN Accounts A ON T.account_id = A.account_id
+JOIN Users U ON A.user_id = U.user_id
+WHERE U.name = "John Doe"
+AND T.transaction_date BETWEEN '2024-01-01' AND '2024-01-31';
+2025-06-10 22:11:20,706 - __main__ - INFO - Running SQL query on Supabase. (run_sql function)
+2025-06-10 22:11:21,354 - __main__ - ERROR - Error with running query:{'message': 'syntax error at or near ";"', 'code': '42601', 'hint': None, 'details': None}

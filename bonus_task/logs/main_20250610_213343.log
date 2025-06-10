@@ -1,0 +1,2 @@
+2025-06-10 21:33:57,980 - __main__ - DEBUG - USER PROMPT:how much did I spend on groceries this month?
+2025-06-10 21:33:57,981 - __main__ - INFO - Generating SQL query from LLM. (generate_sql function)

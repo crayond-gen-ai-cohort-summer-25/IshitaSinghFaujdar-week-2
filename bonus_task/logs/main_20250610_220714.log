@@ -1,0 +1,5 @@
+2025-06-10 22:07:29,043 - __main__ - DEBUG - USER PROMPT:how much did i spend this month on groceries?
+2025-06-10 22:07:29,045 - __main__ - INFO - Generating SQL query from LLM. (generate_sql function)
+2025-06-10 22:07:31,498 - __main__ - DEBUG - Generated query: SELECT DISTINCT t1.name FROM singer AS t1 JOIN performance AS t2 ON t1.singerid  =  t2.singerid JOIN song AS t3 ON t2.songid  =  t3.songid WHERE t3.songname  =  'Honey'
+2025-06-10 22:07:31,498 - __main__ - INFO - Running SQL query on Supabase. (run_sql function)
+2025-06-10 22:07:32,140 - __main__ - ERROR - Error with running query:{'message': 'relation "singer" does not exist', 'code': '42P01', 'hint': None, 'details': None}

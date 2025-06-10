@@ -1,0 +1,22 @@
+2025-06-10 22:33:17,661 - __main__ - DEBUG - USER PROMPT:how much did I spend in total?
+2025-06-10 22:33:17,662 - __main__ - INFO - Generating SQL query from LLM. (generate_sql function)
+2025-06-10 22:33:23,306 - __main__ - DEBUG - Generated query: SELECT
+  c.name AS category,
+  SUM(t.amount) AS total_spent
+FROM Transactions AS t
+JOIN Accounts AS a
+  ON t.account_id = a.account_id
+JOIN Users AS u
+  ON a.user_id = u.user_id
+JOIN Categories AS c
+  ON t.category_id = c.category_id
+WHERE
+  u.user_id = 1
+  AND t.transaction_date >= date_trunc('month', CURRENT_DATE)
+  AND t.transaction_date < date_trunc('month', CURRENT_DATE + interval '1 month')
+GROUP BY
+  c.name
+ORDER BY
+  total_spent DESC
+2025-06-10 22:33:23,309 - __main__ - INFO - Running SQL query on Supabase. (run_sql function)
+2025-06-10 22:33:23,984 - __main__ - ERROR - Error with running query:{'message': 'structure of query does not match function result type', 'code': '42804', 'hint': None, 'details': 'Returned type json does not match expected type jsonb in column 1.'}
